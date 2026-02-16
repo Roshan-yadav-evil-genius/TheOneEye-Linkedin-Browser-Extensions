@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <header class="popup-header">
+      <div class="header-left">
+        <img src="TheOneEye.png" alt="" class="header-logo">
+        <span class="header-brand">TheOneEye</span>
+      </div>
+      <div class="header-right">
+        <button type="button" id="reportBtn" class="btn-report">Report</button>
+      </div>
+    </header>
+    <div class="header-separator"></div>
+    <div id="reportSection" class="report-section" style="display: none;">
+      <label class="report-label">Describe the issue</label>
+      <textarea id="reportDescription" placeholder="Describe the issue..." rows="3"></textarea>
+      <div class="report-actions">
+        <button type="button" id="reportCloseBtn" class="btn-export">Close</button>
+        <button type="button" id="reportSubmitBtn">Submit</button>
+      </div>
+    </div>
+    <div id="infoBlock" class="info-block">
+      <table class="info-table">
+        <tr>
+          <td class="info-label">URL</td>
+          <td class="info-value"><span id="currentUrl">—</span></td>
+        </tr>
+        <tr>
+          <td class="info-label">CSRF</td>
+          <td class="info-value"><span id="currentCsrf">—</span></td>
+        </tr>
+        <tr>
+          <td class="info-label">Query</td>
+          <td class="info-value"><input type="number" id="limitInput" min="1" max="100" value="10" title="Items to load per click (default 10)"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="actions">
+      <button type="button" id="loadBtn"><span class="btn-text">Load</span><span class="btn-spinner" aria-hidden="true"></span></button>
+      <button type="button" id="moreBtn" style="display: none;"><span class="btn-text">Load more</span><span class="btn-spinner" aria-hidden="true"></span></button>
+      <button type="button" id="exportBtn" class="btn-export">Copy</button>
+    </div>
+    <p id="errorMessage" class="error-message" style="display: none;"></p>
+    <div id="listWrapper" class="list-wrapper">
+      <table class="list-table">
+        <thead><tr><th>#</th><th>Name</th><th>Time</th></tr></thead>
+        <tbody id="listBody"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

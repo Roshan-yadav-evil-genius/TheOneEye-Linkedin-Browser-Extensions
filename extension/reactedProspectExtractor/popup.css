@@ -1,0 +1,384 @@
+/* Dark theme: #1A1E27 base, #232A38 cards, #3B82F6 accent */
+html, body {
+  margin: 0;
+  background: #1A1E27;
+  color: #FFFFFF;
+}
+
+.popup {
+  width: 360px;
+  max-height: 480px;
+  padding: 14px;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  background: transparent;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  margin: -14px -14px 0 -14px;
+  background: #1A1E27;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-logo {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
+.header-brand {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.header-extension-name {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-separator {
+  height: 1px;
+  background: #444B5B;
+  margin: 10px -14px 0 -14px;
+  border: none;
+}
+
+.btn-report {
+  font-size: 12px;
+  color: #3B82F6;
+  background: transparent;
+  border: 1px solid #444B5B;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-report:hover {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.report-section {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 12px 14px;
+  background: #232A38;
+  border: 1px solid #444B5B;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.report-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+#reportDescription {
+  width: 100%;
+  min-height: 60px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  background: #2D3548;
+  border: 1px solid #444B5B;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+#reportDescription::placeholder {
+  color: #A0A8B4;
+}
+
+#reportDescription:focus {
+  outline: none;
+  border-color: #3B82F6;
+}
+
+.report-actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.report-actions button {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.info-block {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  background: #232A38;
+  border: 1px solid #444B5B;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.info-block.not-post-page {
+  border-color: #DC3545;
+  background: rgba(220, 53, 69, 0.12);
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.info-table td {
+  vertical-align: top;
+  padding: 4px 8px 6px 0;
+  word-break: break-all;
+}
+
+.info-table tr:last-child td {
+  padding-bottom: 0;
+}
+
+.info-table .info-label {
+  width: 1%;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding-right: 10px;
+}
+
+.info-table .info-value {
+  color: #A0A8B4;
+  min-width: 0;
+}
+
+.info-table #limitInput {
+  width: 100%;
+  box-sizing: border-box;
+  background: #2D3548;
+  border: 1px solid #444B5B;
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 4px 8px;
+  outline: none;
+}
+
+.info-table #limitInput:focus {
+  border-color: #3B82F6;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.actions button {
+  flex: 1 1 0;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions button .btn-text {
+  display: inline;
+}
+
+.actions button .btn-spinner {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.actions button .btn-spinner[aria-hidden="false"] {
+  display: inline-block;
+}
+
+.actions button .btn-text[hidden] {
+  display: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error-message {
+  font-size: 12px;
+  color: #EF4444;
+  margin: 4px 0;
+  min-height: 0;
+}
+
+.error-message.success {
+  color: #22c55e;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+button:hover {
+  background: #2563EB;
+}
+
+button:disabled {
+  background: #4B5563;
+  color: #6B7280;
+  cursor: not-allowed;
+}
+
+button.btn-export {
+  background: transparent;
+  color: #3B82F6;
+  border: 1px solid #3B82F6;
+}
+
+button.btn-export:hover {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+button.btn-export.copied {
+  background: #22c55e;
+  color: #fff;
+  border-color: #22c55e;
+}
+
+button.btn-export.copied:hover {
+  background: #22c55e;
+}
+
+.list-wrapper {
+  max-height: 220px;
+  overflow-y: auto;
+  background: #232A38;
+  border: 1px solid #444B5B;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.list-table th {
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #1C263A;
+  border-bottom: 1px solid #444B5B;
+}
+
+.list-table th:first-child {
+  width: 2em;
+  text-align: center;
+}
+
+.list-table th:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.list-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #444B5B;
+  color: #FFFFFF;
+}
+
+.list-table tr:last-child td {
+  border-bottom: none;
+}
+
+.list-table td:first-child {
+  color: #A0A8B4;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.list-table td:last-child {
+  color: #A0A8B4;
+  font-size: 11px;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.list-table a {
+  color: #3B82F6;
+  text-decoration: none;
+}
+
+.list-table a:hover {
+  text-decoration: underline;
+}
+
+.list-table .name-only {
+  color: #E0E0E0;
+}
+
+/* Scrollbar for list wrapper (dark theme) */
+.list-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list-wrapper::-webkit-scrollbar-track {
+  background: #232A38;
+  border-radius: 4px;
+}
+
+.list-wrapper::-webkit-scrollbar-thumb {
+  background: #444B5B;
+  border-radius: 4px;
+}
+
+.list-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #5a6275;
+}
