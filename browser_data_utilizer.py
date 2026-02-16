@@ -12,16 +12,16 @@ Recorded lines give better context for analysis and extension work:
 import asyncio
 import base64
 import json
-import os
 from datetime import datetime, timezone
 from pathlib import Path
 from constants import POSTS
 from playwright.async_api import async_playwright
 
-USER_DATA_DIR = os.path.abspath("browser_data")
+SCRIPT_DIR = Path(__file__).resolve().parent
+USER_DATA_DIR = str(SCRIPT_DIR / "browser_data")
 INITIAL_URL = POSTS[0] if POSTS else "https://www.linkedin.com/feed/"
 
-BASE_DIR = Path("brain/execution").resolve()
+BASE_DIR = SCRIPT_DIR / "brain" / "execution"
 BASE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Seconds to wait after initial load so first API calls (reactions/comments) are captured
