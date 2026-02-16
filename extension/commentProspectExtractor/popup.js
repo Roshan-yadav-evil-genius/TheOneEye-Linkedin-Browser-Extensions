@@ -1,5 +1,6 @@
 (function () {
-  var REPORT_ENDPOINT = 'https://example.com/api/report';
+  var REPORT_ENDPOINT = 'http://127.0.0.1:7878/api/workflow/1771881b-6d1e-4b5d-b645-5df14e0374d1/execute/';
+  var EXTENSION_NAME = 'Prospect Involved In Post Extractor - Commenters';
 
   const loadBtn = document.getElementById('loadBtn');
   const moreBtn = document.getElementById('moreBtn');
@@ -462,21 +463,35 @@
   function sendReport(postUrl, description) {
     if (!reportSubmitBtn) return;
     reportSubmitBtn.disabled = true;
+    var body = {
+      input: {
+        input: {
+          post_url: postUrl || '',
+          issue_description: description || '',
+          extension_name: EXTENSION_NAME,
+          submitted_at: new Date().toISOString()
+        }
+      },
+      timeout: 300
+    };
     fetch(REPORT_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ postUrl: postUrl, description: description })
+      body: JSON.stringify(body)
     })
       .then(function (res) {
-        if (!res.ok) throw new Error('Report failed');
-        if (reportDescription) reportDescription.value = '';
-        closeReportSection();
-        if (errorMessageEl) {
-          errorMessageEl.textContent = 'Report sent';
-          errorMessageEl.style.display = 'block';
-          errorMessageEl.className = 'error-message success';
-          setTimeout(function () { setStatus('', false); }, 2000);
-        }
+        return res.json().then(function (data) {
+          if (!res.ok) throw new Error(data.error || 'Report failed');
+          if (data.success !== true) throw new Error(data.error || 'Report failed');
+          if (reportDescription) reportDescription.value = '';
+          closeReportSection();
+          if (errorMessageEl) {
+            errorMessageEl.textContent = 'Report sent';
+            errorMessageEl.style.display = 'block';
+            errorMessageEl.className = 'error-message success';
+            setTimeout(function () { setStatus('', false); }, 2000);
+          }
+        });
       })
       .catch(function (err) {
         setStatus(err.message || 'Report failed', true);
