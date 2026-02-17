@@ -1,5 +1,5 @@
 (function () {
-  var REPORT_ENDPOINT = 'http://127.0.0.1:7878/api/workflow/1771881b-6d1e-4b5d-b645-5df14e0374d1/execute/';
+  var REPORT_ENDPOINT = 'http://172.16.1.127:7878/api/workflow/1771881b-6d1e-4b5d-b645-5df14e0374d1/execute/';
   var EXTENSION_NAME = 'Prospect Involved In Post Extractor - Commenters';
 
   const loadBtn = document.getElementById('loadBtn');

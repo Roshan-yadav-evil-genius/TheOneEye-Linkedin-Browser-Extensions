@@ -13,11 +13,11 @@ const DEFAULT_THRESHOLDS = {
 const THRESHOLD_CATEGORIES = ['overallScore', 'Profile', 'Posts', 'Reactions', 'Comments'];
 
 // API endpoint URL
-const API_URL = 'http://127.0.0.1:7878/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
+const API_URL = 'http://172.16.1.127:7878/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
 
 // API request timeout (seconds)
 const API_REQUEST_TIMEOUT = 300;
-// const API_URL = 'http://127.0.0.1:7878/api/webhooks/IntentProfileScoringSystem/';
+// const API_URL = 'http://172.16.1.127:7878/api/webhooks/IntentProfileScoringSystem/';
 
 // Color constants for consistent styling
 // Content script (overlay + rating UI) uses dark theme tokens (bgPrimary, bgSection, textPrimary, etc.)
