@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Intent Based Profile Scoring System",
+  "version": "1.0.0",
+  "description": "Analyze LinkedIn profile pages to score the profile based on the intent",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "http://127.0.0.1:7878/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/in/*"],
+      "js": ["constants.js", "storageUtils.js", "domUtils.js", "ratingUI.js", "elementInserter.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["logo.png", "TheOneEye.png"],
+      "matches": ["https://www.linkedin.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
+}

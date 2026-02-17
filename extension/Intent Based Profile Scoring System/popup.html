@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Eye Analyzer</title>
+  <style>
+    body {
+      width: 600px;
+      max-height: 520px;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #0A1128;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 8px;
+      margin-bottom: 6px;
+      gap: 8px;
+      flex-shrink: 0;
+      background-color: #0F1729;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .header-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      display: block;
+    }
+    .header-title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    .header-middle {
+      flex: 1;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 0 12px;
+    }
+    .main-container {
+      display: flex;
+      gap: 10px;
+      align-items: stretch;
+      padding: 0 10px 8px 10px;
+      min-height: 0;
+      flex: 1;
+      overflow: hidden;
+    }
+    .left-column {
+      flex: 0 0 220px;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .right-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      min-height: 0;
+    }
+    .control-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .control-group:last-child {
+      border-bottom: none;
+    }
+    .control-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1f2937;
+    }
+    .toggle-switch {
+      position: relative;
+      width: 36px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .toggle-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.25);
+      transition: 0.2s ease;
+      border-radius: 20px;
+    }
+    .toggle-slider:before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 3px;
+      top: 3px;
+      background-color: white;
+      transition: 0.2s ease;
+      border-radius: 50%;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    }
+    .toggle-switch input:checked + .toggle-slider {
+      background-color: #0C6DFD;
+    }
+    .toggle-switch input:checked + .toggle-slider:before {
+      transform: translateX(16px);
+    }
+    .intent-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      min-height: 0;
+      background-color: rgba(15, 23, 41, 0.6);
+      border-radius: 6px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      padding: 8px 10px;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .intent-label-wrap {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 4px;
+      flex-shrink: 0;
+    }
+    .intent-label {
+      font-size: 12px;
+      font-weight: 500;
+      margin: 0;
+      color: #ffffff;
+    }
+    .control-icon {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      opacity: 0.9;
+    }
+    .control-label-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .intent-textarea {
+      width: 100%;
+      flex: 1;
+      min-height: 60px;
+      max-height: 100%;
+      padding: 6px 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      background-color: rgba(10, 17, 40, 0.8);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 12px;
+      line-height: 1.4;
+      resize: none;
+      box-sizing: border-box;
+      margin: 0;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #0C6DFD rgba(255, 255, 255, 0.08);
+    }
+    .intent-textarea:focus {
+      outline: none;
+      border-color: #0C6DFD;
+      background-color: rgba(10, 17, 40, 0.9);
+    }
+    .intent-textarea::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    /* Themed scrollbar - WebKit (Chrome, Edge, Safari) */
+    .intent-textarea::-webkit-scrollbar {
+      width: 8px;
+    }
+    .intent-textarea::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 4px;
+    }
+    .intent-textarea::-webkit-scrollbar-thumb {
+      background: rgba(12, 109, 253, 0.6);
+      border-radius: 4px;
+    }
+    .intent-textarea::-webkit-scrollbar-thumb:hover {
+      background: #0C6DFD;
+    }
+    .intent-textarea::-webkit-scrollbar-thumb:active {
+      background: #0A5FD4;
+    }
+    .save-button,
+    .send-button {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 6px 10px;
+      background-color: #0C6DFD;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .save-button:hover,
+    .send-button:hover {
+      background-color: #0A5FD4;
+    }
+    .save-button:active,
+    .send-button:active {
+      background-color: #0954C4;
+    }
+    .save-button:disabled,
+    .send-button:disabled {
+      background-color: rgba(255, 255, 255, 0.2);
+      cursor: not-allowed;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .save-container {
+      padding: 6px 10px 10px 10px;
+      width: 100%;
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+    .threshold-section {
+      margin-top: 0;
+      background-color: rgba(15, 23, 41, 0.6);
+      border-radius: 6px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      padding: 8px 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .threshold-control {
+      margin-bottom: 6px;
+    }
+    .threshold-control:last-child {
+      margin-bottom: 0;
+    }
+    .threshold-control-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+      font-size: 12px;
+      color: #ffffff;
+    }
+    .threshold-control-label .control-label-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .threshold-value {
+      font-weight: 600;
+      color: #0C6DFD;
+      min-width: 35px;
+      text-align: right;
+    }
+    .threshold-slider {
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.15);
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .threshold-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #0C6DFD;
+      cursor: pointer;
+      transition: transform 0.15s ease, background 0.15s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .threshold-slider::-webkit-slider-thumb:hover {
+      background: #0A5FD4;
+      transform: scale(1.08);
+    }
+    .threshold-slider::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #0C6DFD;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.15s ease, background 0.15s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .threshold-slider::-moz-range-thumb:hover {
+      background: #0A5FD4;
+      transform: scale(1.08);
+    }
+    .toggle-section {
+      margin-top: 6px;
+      background-color: rgba(15, 23, 41, 0.6);
+      border-radius: 6px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      padding: 6px 10px;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .toggle-section-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .toggle-section-row:last-child {
+      border-bottom: none;
+    }
+    .toggle-section-row .row-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    .toggle-section-row .row-label.disabled {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <img src="TheOneEye.png" alt="Logo" class="header-logo">
+      <h1 class="header-title">TheOneEye</h1>
+    </div>
+    <div class="header-middle">IntentProfileScoringSystem</div>
+  </div>
+  
+  <div class="main-container">
+    <div class="left-column">
+      <div class="threshold-section">
+        <div class="threshold-control">
+          <div class="threshold-control-label">
+            <span class="control-label-wrap" title="Minimum combined score (profile + activity) to pass. Results at or above this % are shown as passing.">
+              <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V4M6 14l6 3 6-3M6 10l6 3 6-3M6 6l6 3 6-3"/></svg>
+              <span>Overall Score</span>
+            </span>
+            <span class="threshold-value" id="overallScore-value">50</span>
+          </div>
+          <input type="range" min="0" max="100" value="50" class="threshold-slider" id="overallScore-slider">
+        </div>
+        
+        <div class="threshold-control">
+          <div class="threshold-control-label">
+            <span class="control-label-wrap" title="Minimum score for the profile section alone. Profile is scored against your intent.">
+              <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3"/><path d="M5 20v-2a5 5 0 0110 0v2"/></svg>
+              <span>Profile</span>
+            </span>
+            <span class="threshold-value" id="Profile-value">50</span>
+          </div>
+          <input type="range" min="0" max="100" value="50" class="threshold-slider" id="Profile-slider">
+        </div>
+        
+        <div class="threshold-control">
+          <div class="threshold-control-label">
+            <span class="control-label-wrap" title="Minimum score for posts uploaded by the prospect. Each post is compared to your intent.">
+              <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+              <span>Posts</span>
+            </span>
+            <span class="threshold-value" id="Posts-value">50</span>
+          </div>
+          <input type="range" min="0" max="100" value="50" class="threshold-slider" id="Posts-slider">
+        </div>
+        
+        <div class="threshold-control">
+          <div class="threshold-control-label">
+            <span class="control-label-wrap" title="Minimum score for reactions (likes, etc.) by the prospect. Reactions are scored against your intent.">
+              <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>
+              <span>Reactions</span>
+            </span>
+            <span class="threshold-value" id="Reactions-value">50</span>
+          </div>
+          <input type="range" min="0" max="100" value="50" class="threshold-slider" id="Reactions-slider">
+        </div>
+        
+        <div class="threshold-control">
+          <div class="threshold-control-label">
+            <span class="control-label-wrap" title="Minimum score for comments by the prospect. Comments are scored against your intent.">
+              <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              <span>Comments</span>
+            </span>
+            <span class="threshold-value" id="Comments-value">50</span>
+          </div>
+          <input type="range" min="0" max="100" value="50" class="threshold-slider" id="Comments-slider">
+        </div>
+      </div>
+      <div class="toggle-section">
+        <div class="toggle-section-row">
+          <span class="control-label-wrap row-label" title="When on, scores are fetched automatically on each profile. When off, you open the sidebar and trigger the request with one click.">
+            <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>Autoscore</span>
+          </span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="autoscore-toggle">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="toggle-section-row">
+          <span class="control-label-wrap row-label header-show-sidebar-label" id="show-sidebar-label" title="When on (and Autoscore is on), the sidebar opens automatically and shows loading. When off, the sidebar stays closed and fetches in the background; open it when you want to see results.">
+            <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="3" width="7" height="18" rx="1"/></svg>
+            <span>Show sidebar</span>
+          </span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="show-sidebar-toggle">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="toggle-section-row">
+          <span class="control-label-wrap row-label" title="When on, previously scored profiles are loaded from cache instead of re-requesting the server. Click Rescore in the sidebar to refresh and update the cache.">
+            <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 5 7 7 0 0021 12.79z"/></svg>
+            <span>Use cache</span>
+          </span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="cache-toggle">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="right-column">
+      <div class="intent-section">
+        <div class="intent-label-wrap" title="Describe what you are looking for. The system scores the profile and activity (posts, reactions, comments) against this intent. Higher similarity to your intent gives a higher score.">
+          <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          <label class="intent-label" for="intent-textarea">Intent</label>
+        </div>
+        <textarea 
+          id="intent-textarea" 
+          class="intent-textarea" 
+          placeholder="Enter your intent for scoring..."
+          rows="3"
+        ></textarea>
+      </div>
+    </div>
+  </div>
+  
+  <div class="save-container">
+    <button id="save-button" class="send-button">Save</button>
+  </div>
+  
+  <script src="constants.js"></script>
+  <script src="storageUtils.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
