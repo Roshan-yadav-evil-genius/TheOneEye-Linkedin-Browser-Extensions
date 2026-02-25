@@ -1,8 +1,9 @@
 // This file is responsible for initialization and observers
 
-// Check if we're on a LinkedIn profile page
+// Check if we're on a LinkedIn profile main page (not sub-pages like /in/name/recent-activity/all/)
 function isProfilePage() {
-  return window.location.pathname.includes('/in/');
+  const path = window.location.pathname;
+  return /^\/in\/[^/]+\/?$/.test(path);
 }
 
 // Fetch profile data from API (or from cache when enabled and not forceRefresh)
