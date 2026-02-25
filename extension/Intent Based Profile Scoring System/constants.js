@@ -12,12 +12,11 @@ const DEFAULT_THRESHOLDS = {
 // Array of all threshold category names (popup sliders)
 const THRESHOLD_CATEGORIES = ['overallScore', 'Profile', 'Posts', 'Reactions', 'Comments'];
 
-// API endpoint URL
-const API_URL = 'http://4.240.102.231:7878/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
+// API endpoint URL (API_BASE from config.js; fallback for contexts where config is not loaded)
+const API_URL = (typeof API_BASE !== 'undefined' ? API_BASE : 'http://4.240.102.231:7878') + '/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
 
 // API request timeout (seconds)
 const API_REQUEST_TIMEOUT = 300;
-// const API_URL = 'http://4.240.102.231:7878/api/webhooks/IntentProfileScoringSystem/';
 
 // Color constants for consistent styling
 // Content script (overlay + rating UI) uses dark theme tokens (bgPrimary, bgSection, textPrimary, etc.)
