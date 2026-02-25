@@ -63,6 +63,10 @@ async function processOne(payload, sendResponse, tabId) {
     if (requestQueue.length > 0) {
       const next = requestQueue.shift();
       sendQueueStatusToTab(next.tabId, 'processing');
+      // Update remaining queued tabs with their new position (count down as queue advances)
+      requestQueue.forEach((item, index) => {
+        sendQueueStatusToTab(item.tabId, 'queued', index + 1);
+      });
       processOne(next.payload, next.sendResponse, next.tabId);
     } else {
       isProcessing = false;
