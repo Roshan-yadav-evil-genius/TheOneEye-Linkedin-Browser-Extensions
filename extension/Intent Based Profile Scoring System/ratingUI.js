@@ -44,7 +44,9 @@ function createCenteredLoadingWidget() {
   // Create centered loading container using utility
   const loadingContainer = createSpinner(48, 'Loading...');
   card.appendChild(loadingContainer);
-  
+  const loadingTextEl = loadingContainer.querySelector('div:last-child');
+  if (loadingTextEl) loadingTextEl.id = 'TheOneEyeLoadingMessage';
+
   return card;
 }
 

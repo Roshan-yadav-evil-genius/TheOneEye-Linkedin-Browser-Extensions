@@ -56,6 +56,11 @@ function hideAnalyzerFooter() {
   if (footer) footer.classList.add(FOOTER_HIDDEN_CLASS);
 }
 
+function updateAnalyzerLoadingMessage(message) {
+  const el = document.getElementById('TheOneEyeLoadingMessage');
+  if (el) el.textContent = message;
+}
+
 // Flag to prevent multiple simultaneous fetches
 let isFetching = false;
 

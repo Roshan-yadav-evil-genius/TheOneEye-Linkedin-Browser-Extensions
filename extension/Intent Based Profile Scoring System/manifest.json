@@ -11,6 +11,9 @@
     "https://www.linkedin.com/*",
     "http://172.16.1.127:7878/*"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.linkedin.com/in/*"],

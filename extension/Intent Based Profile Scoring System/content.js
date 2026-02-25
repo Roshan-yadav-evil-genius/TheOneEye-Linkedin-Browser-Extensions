@@ -11,7 +11,6 @@ function isProfilePage() {
 async function fetchProfileData(options = {}) {
   const forceRefresh = options.forceRefresh === true;
   const currentUrl = window.location.href;
-  const apiUrl = API_URL;
 
   const cacheEnabled = await getCacheState();
   if (cacheEnabled && !forceRefresh) {
@@ -21,54 +20,24 @@ async function fetchProfileData(options = {}) {
 
   try {
     const intent = await getIntent();
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        input: { input: { url: currentUrl, intent: intent ?? '' } },
+    const response = await chrome.runtime.sendMessage({
+      type: 'FETCH_PROFILE_DATA',
+      payload: {
+        url: currentUrl,
+        intent: intent ?? '',
         timeout: API_REQUEST_TIMEOUT
-      })
+      }
     });
 
-    // Check HTTP status first - if not 200, show generic message
-    if (response.status !== 200) {
-      throw new Error('STATUS_NOT_200');
+    if (response === undefined) {
+      throw new Error('Failed to fetch');
+    }
+    if (response.success === false) {
+      throw new Error(response.error);
     }
 
-    // Parse response JSON
-    let apiResponse;
-    try {
-      apiResponse = await response.json();
-    } catch (parseError) {
-      // If response is not JSON, throw generic error
-      throw new Error('STATUS_NOT_200');
-    }
-
-    // Check if API call was successful (check success flag)
-    if (!apiResponse.success) {
-      // Extract error message from API response (status is 200 but success is false)
-      const errorMsg = apiResponse.error || 'API returned unsuccessful response';
-      throw new Error(errorMsg);
-    }
-
-    // Check if output exists
-    if (!apiResponse.output) {
-      throw new Error('API response missing output data');
-    }
-
-    // Extract data from nested output structure
-    const output = apiResponse.output;
-
-    // Map API response to normalized format for UI
-    const profileScore = Math.round((output.profile ?? 0) * 100);
-    const activity = (output.activity || []).map(item => ({
-      post_url: item.post_url,
-      similarity: item.similarity,
-      source: item.source
-    }));
-    const data = { profileScore, activity };
+    const data = response.data;
+    updateAnalyzerLoadingMessage('Response received, storing in cache...');
     if (cacheEnabled) await setCachedResponse(currentUrl, data);
     return { ...data, fromCache: false };
   } catch (error) {
@@ -141,4 +110,14 @@ const urlObserver = new MutationObserver(() => {
 });
 
 urlObserver.observe(document, { subtree: true, childList: true });
+
+// Listen for queue status updates from background (one-way; no sendResponse)
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.type !== 'QUEUE_STATUS') return;
+  if (message.status === 'queued') {
+    updateAnalyzerLoadingMessage('Your request is in queue (position ' + message.position + ').');
+  } else if (message.status === 'processing') {
+    updateAnalyzerLoadingMessage('Processing your request...');
+  }
+});
 
