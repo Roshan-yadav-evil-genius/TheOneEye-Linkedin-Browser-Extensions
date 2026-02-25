@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Load who commented on a LinkedIn post (10 at a time) from the popup.",
   "permissions": ["activeTab", "scripting"],
-  "host_permissions": ["https://www.linkedin.com/*"],
+  "host_permissions": ["https://www.linkedin.com/*", "http://4.240.102.231:7878/*"],
   "icons": {
     "16": "icon.png",
     "48": "icon.png",

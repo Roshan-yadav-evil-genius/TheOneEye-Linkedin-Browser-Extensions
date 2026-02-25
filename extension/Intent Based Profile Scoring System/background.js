@@ -1,7 +1,7 @@
 // Background service worker: queues profile-scoring requests and runs one fetch at a time.
 // Sends QUEUE_STATUS (queued/processing) to tabs for informational loading UI.
 
-const API_URL = 'http://172.16.1.127:7878/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
+const API_URL = 'http://4.240.102.231:7878/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
 const API_REQUEST_TIMEOUT = 300;
 
 const requestQueue = [];
