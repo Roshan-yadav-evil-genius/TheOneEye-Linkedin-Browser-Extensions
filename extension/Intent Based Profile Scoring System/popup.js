@@ -1,3 +1,75 @@
+const EXTENSION_NAME = 'Intent Based Profile Scoring System';
+
+// Report UI: toggle, close, submit
+function toggleReportSection() {
+  const reportSection = document.getElementById('reportSection');
+  if (!reportSection) return;
+  reportSection.style.display = reportSection.style.display === 'none' ? 'block' : 'none';
+}
+
+function closeReportSection() {
+  const reportSection = document.getElementById('reportSection');
+  if (reportSection) reportSection.style.display = 'none';
+}
+
+function setReportStatus(message, isError) {
+  const el = document.getElementById('reportStatus');
+  if (!el) return;
+  el.textContent = message || '';
+  el.className = 'report-status' + (isError ? ' error' : ' success');
+  el.style.display = message ? 'block' : 'none';
+  if (message && !isError) {
+    setTimeout(() => setReportStatus('', false), 2000);
+  }
+}
+
+async function onReportSubmit() {
+  const reportDescription = document.getElementById('reportDescription');
+  const description = reportDescription ? reportDescription.value.trim() : '';
+  let pageUrl = '';
+  try {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    pageUrl = (tab && tab.url) ? tab.url : '';
+  } catch (_) {}
+  await sendReport(pageUrl, description);
+}
+
+async function sendReport(pageUrl, description) {
+  const reportSubmitBtn = document.getElementById('reportSubmitBtn');
+  const reportDescription = document.getElementById('reportDescription');
+  if (!reportSubmitBtn) return;
+  reportSubmitBtn.disabled = true;
+  setReportStatus('', false);
+  const body = {
+    input: {
+      input: {
+        post_url: pageUrl || '',
+        issue_description: description || '',
+        extension_name: EXTENSION_NAME,
+        submitted_at: new Date().toISOString()
+      }
+    },
+    timeout: 300
+  };
+  try {
+    const res = await fetch(REPORT_API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Report failed');
+    if (data.success !== true) throw new Error(data.error || 'Report failed');
+    if (reportDescription) reportDescription.value = '';
+    closeReportSection();
+    setReportStatus('Report sent', false);
+  } catch (err) {
+    setReportStatus(err.message || 'Report failed', true);
+  } finally {
+    if (reportSubmitBtn) reportSubmitBtn.disabled = false;
+  }
+}
+
 // Load current autoscore state, show-sidebar state, and intent
 async function loadAutoscoreState() {
   try {
@@ -155,6 +227,14 @@ function setupThresholdSliders() {
     }
   });
 }
+
+// Report button and section listeners
+const reportBtn = document.getElementById('reportBtn');
+const reportCloseBtn = document.getElementById('reportCloseBtn');
+const reportSubmitBtn = document.getElementById('reportSubmitBtn');
+if (reportBtn) reportBtn.addEventListener('click', toggleReportSection);
+if (reportCloseBtn) reportCloseBtn.addEventListener('click', closeReportSection);
+if (reportSubmitBtn) reportSubmitBtn.addEventListener('click', onReportSubmit);
 
 // Load state when popup opens
 loadAutoscoreState();
