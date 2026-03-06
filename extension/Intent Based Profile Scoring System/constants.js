@@ -13,10 +13,10 @@ const DEFAULT_THRESHOLDS = {
 const THRESHOLD_CATEGORIES = ['overallScore', 'Profile', 'Posts', 'Reactions', 'Comments'];
 
 // API endpoint URL (API_BASE from config.js; fallback for contexts where config is not loaded)
-const API_URL = (typeof API_BASE !== 'undefined' ? API_BASE : 'http://4.240.102.231:7878') + '/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
+const API_URL = (typeof API_BASE !== 'undefined' ? API_BASE : 'http://4.188.82.36:7878') + '/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
 
 // Report workflow endpoint (same as Prospect Extractors; post_url = current tab URL for Intent)
-const REPORT_API_URL = (typeof API_BASE !== 'undefined' ? API_BASE : 'http://4.240.102.231:7878') + '/api/workflow/1771881b-6d1e-4b5d-b645-5df14e0374d1/execute/';
+const REPORT_API_URL = (typeof API_BASE !== 'undefined' ? API_BASE : 'http://4.188.82.36:7878') + '/api/workflow/1771881b-6d1e-4b5d-b645-5df14e0374d1/execute/';
 
 // API request timeout (seconds)
 const API_REQUEST_TIMEOUT = 300;

@@ -35,7 +35,7 @@ def main() -> None:
     prompt = "Is it dev? (y/n, blank = yes): "
     raw = input(prompt).strip().lower()
     is_dev = raw in ("", "y", "yes")
-    mode = "dev (localhost:7878)" if is_dev else "prod (4.240.102.231:7878)"
+    mode = "dev (localhost:7878)" if is_dev else "prod (4.188.82.36:7878)"
     print(f"Setting all configs to {mode} ...")
     for filepath, var_kind, const_kind in CONFIG_FILES:
         if not os.path.isfile(filepath):
