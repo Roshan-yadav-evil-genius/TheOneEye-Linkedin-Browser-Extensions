@@ -29,7 +29,7 @@ chromium_args_reason = {
 async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(
-            headless=False,
+            headless=True,
             args=list(chromium_args_reason.keys()),
         )
         context = await browser.new_context()
@@ -38,8 +38,10 @@ async def main():
         await page.goto("https://accounts.google.com")
         email = "roshanyadavonwork@gmail.com"
         await page.fill("input[name='identifier']", email)
+        await page.click("button:has-text('Next')")
         # Wait indefinitely until browser is closed manually
-        await page.wait_for_event("close", timeout=0)
+        await page.wait_for_timeout(5000)
+        await page.screenshot(path="google.png")
         # Save the updated storage state
         await context.storage_state(path=STORAGE_STATE_PATH)
         await browser.close()

@@ -18,7 +18,8 @@ from constants import POSTS
 from playwright.async_api import async_playwright
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-USER_DATA_DIR = str(SCRIPT_DIR / "browser_data")
+# USER_DATA_DIR = str(SCRIPT_DIR / "browser_data")
+USER_DATA_DIR = Path("/home/roshan-yadav/Desktop/TheOneEye/backend/data/Browser/f8f1567b-9747-4f45-b48a-5c428bd3fee5").as_posix()
 INITIAL_URL = POSTS[0] if POSTS else "https://www.linkedin.com/feed/"
 
 BASE_DIR = SCRIPT_DIR / "brain" / "execution"
