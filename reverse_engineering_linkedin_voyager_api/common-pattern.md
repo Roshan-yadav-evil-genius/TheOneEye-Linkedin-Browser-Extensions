@@ -73,3 +73,101 @@ Contains the metrics for likes, comments, and shares.
 5.  **`Update`**: Main class for posts, with optional fields for `commentary`, `content`, and `resharedUpdate`.
 6.  **`Comment`**: Class for parsing individual comments.
 7.  **`LinkedInResponse`**: Top-level parser for the `data` and `included` structure.
+
+## 5. Pydantic Class Diagram (Mermaid)
+
+```mermaid
+classDiagram
+    class LinkedInResponse {
+        +dict data
+        +List~BaseEntity~ included
+    }
+
+    class BaseEntity {
+        <<abstract>>
+        +str entityUrn
+        +str type_ (\$type)
+    }
+
+    class Update {
+        +Actor actor
+        +CommentaryComponent commentary
+        +ContentUnion content
+        +SocialContent socialContent
+        +Urn resharedUpdate
+        +List~Urn~ highlightedComments
+    }
+
+    class Comment {
+        +int createdAt
+        +TextViewModel commentary
+        +Commenter commenter
+        +Urn parentComment
+        +Urn threadUrn
+    }
+
+    class SocialActivityCounts {
+        +int numLikes
+        +int numComments
+        +int numShares
+        +List~ReactionTypeCount~ reactionTypeCounts
+        +Urn entityUrn
+    }
+
+    class ReactionTypeCount {
+        +int count
+        +str reactionType
+    }
+
+    class TextViewModel {
+        +str text
+        +List~TextAttribute~ attributesV2
+    }
+
+    class TextAttribute {
+        +int start
+        +int length
+        +dict detailData
+    }
+
+    class Actor {
+        +ImageViewModel image
+        +TextViewModel name
+        +TextViewModel description
+        +Urn profileUrn
+        +Urn companyUrn
+    }
+
+    class ImageViewModel {
+        +List~ImageAttribute~ attributes
+    }
+
+    class ImageAttribute {
+        +VectorImage vectorImage
+    }
+
+    class VectorImage {
+        +str rootUrl
+        +List~VectorArtifact~ artifacts
+    }
+
+    class VectorArtifact {
+        +int width
+        +int height
+        +str fileIdentifyingUrlPathSegment
+    }
+
+    BaseEntity <|-- Update
+    BaseEntity <|-- Comment
+    BaseEntity <|-- SocialActivityCounts
+
+    Update "1" --> "1" Actor : has
+    Update "1" --> "0..1" SocialActivityCounts : metrics (linked via URN)
+    Comment "1" --> "1" TextViewModel : contains
+    SocialActivityCounts "1" --> "*" ReactionTypeCount : breaks down
+    TextViewModel "1" --> "*" TextAttribute : styled by
+    Actor "1" --> "1" ImageViewModel : has avatar
+    ImageViewModel "1" --> "*" ImageAttribute : has
+    ImageAttribute "1" --> "1" VectorImage : contains
+    VectorImage "1" --> "*" VectorArtifact : provides
+```
