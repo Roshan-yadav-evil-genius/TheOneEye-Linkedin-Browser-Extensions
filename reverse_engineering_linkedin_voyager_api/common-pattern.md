@@ -4,77 +4,59 @@ This document identifies shared patterns and schemas across `recent-activity-all
 
 ## 1. Top-Level Response Structure
 
-All three files follow a consistent top-level structure:
+All files follow a consistent top-level structure:
 
 - **`data`**:
-  - **`data`**: Contains the main response object named after the specific query (e.g., `feedDashProfileUpdatesByMemberShareFeed`, `feedDashProfileUpdatesByMemberComments`, or `feedDashProfileUpdatesByMemberReactions`).
+  - **`data`**: Contains the main response object named after the specific query.
     - **`*elements`**: A list of URNs pointing to entities in the `included` array.
-    - **`paging`**: Standard pagination metadata (`count`, `start`, `total`).
-    - **`metadata`**: Includes `paginationToken`.
-- **`included`**: A flat array of normalized entities. Each entity has a `$type` and `entityUrn`.
+    - **`paging`**: Standard pagination metadata (`count`, \`start\`, \`total\`).
+    - **`metadata`**: Includes \`paginationToken\`.
+- **\`included\`**: A flat array of normalized entities. Each entity has a \`\$type\` and \`entityUrn\`.
 
-## 2. Core Entities & Types
+## 2. Core Entities & Types (Feed / Activity)
 
 The following entities are common across all activity types:
 
-### 2.1 `com.linkedin.voyager.dash.feed.Update`
-The primary object for any feed item. Whether it's a post, a comment activity, or a reaction activity, it is represented as an `Update`.
+### 2.1 \`com.linkedin.voyager.dash.feed.Update\`
+The primary object for any feed item. Whether it's a post, a comment activity, or a reaction activity, it is represented as an \`Update\`.
 
 **Key Fields:**
-- `entityUrn`: `urn:li:fsd_update:(urn:li:activity:[ACTIVITY_ID],...)`
-- `actor`: Contains profile/company information (name, image, headline).
-- `commentary`: Contains the text of the post (if applicable).
-  - Type: `com.linkedin.voyager.dash.feed.component.commentary.CommentaryComponent`
-- `content`: Contains media (video, images, articles).
-  - Examples: `LinkedInVideoComponent`, `ImageComponent`, `ArticleComponent`.
-- `socialContent`: Metadata about social interactions (share URL, visibility settings).
-- `resharedUpdate`: Reference to the original post if the current update is a reshare.
+- \`entityUrn\`: \`urn:li:fsd_update:(urn:li:activity:[ACTIVITY_ID],...)\`
+- \`actor\`: Contains profile/company information (name, image, headline).
+- \`commentary\`: Contains the text of the post (if applicable).
+- \`content\`: Contains media (video, images, articles).
+- \`socialContent\`: Metadata about social interactions (share URL, visibility settings).
+- \`resharedUpdate\`: Reference to the original post if the current update is a reshare.
 
-### 2.2 `com.linkedin.voyager.dash.social.Comment`
-Used in the `comments.json` file to represent the actual comment content.
+### 2.2 \`com.linkedin.voyager.dash.social.Comment\`
+Used in the \`comments.json\` file to represent the actual comment content.
 
 **Key Fields:**
-- `entityUrn`: `urn:li:fsd_comment:([COMMENT_ID],urn:li:activity:[ACTIVITY_ID])`
-- `createdAt`: Millisecond timestamp.
-- `commentary`: The text of the comment.
-  - Type: `com.linkedin.voyager.dash.common.text.TextViewModel`
-- `commenter`: Information about the person who made the comment.
-- `*parentComment`: Reference to the parent comment (if it's a reply).
+- \`entityUrn\`: \`urn:li:fsd_comment:([COMMENT_ID],urn:li:activity:[ACTIVITY_ID])\`
+- \`createdAt\`: Millisecond timestamp.
+- \`commentary\`: The text of the comment.
+- \`commenter\`: Information about the person who made the comment.
 
-### 2.3 `com.linkedin.voyager.dash.feed.SocialActivityCounts`
+### 2.3 \`com.linkedin.voyager.dash.feed.SocialActivityCounts\`
 Contains the metrics for likes, comments, and shares.
 
 **Key Fields:**
-- `entityUrn`: `urn:li:fsd_socialActivityCounts:urn:li:activity:[ID]` or `urn:li:fsd_socialActivityCounts:urn:li:ugcPost:[ID]`
-- `numLikes`: Total count of reactions.
-- `numComments`: Total count of comments.
-- `numShares`: Total count of shares/reposts.
-- `reactionTypeCounts`: A list of `ReactionTypeCount` objects (LIKE, CELEBRATE, SUPPORT, etc.).
+- \`numLikes\`, \`numComments\`, \`numShares\`.
+- \`reactionTypeCounts\`: Breakdown of reaction types (LIKE, CELEBRATE, etc.).
 
-### 2.4 Shared Component Types
-- **`TextViewModel`**: Used for almost all text fields.
-  - `text`: The raw string.
-  - `attributesV2`: List of formatting/mention attributes (mentions, hashtags, links).
-- **`ImageViewModel`**: Used for profile pictures and post images.
-  - `attributes`: List of `ImageAttribute` (includes `vectorImage` with `rootUrl` and `artifacts`).
+## 3. Shared Component Types
+- **\`TextViewModel\`**: Used for almost all text fields.
+  - \`text\`: The raw string.
+  - \`attributesV2\`: List of formatting/mention attributes.
+- **\`ImageViewModel\`**: Used for profile pictures and post images.
+  - \`attributes\`: List of \`ImageAttribute\` (includes \`vectorImage\` with \`rootUrl\` and \`artifacts\`).
 
-## 3. Relationship Mapping
+## 4. Relationship Mapping
 
-- **Update to Social Counts**: The `SocialActivityCounts` entity for an `Update` can be found in `included` by constructing a URN using the `activity ID` found inside the `Update.entityUrn`.
-- **Update to Comment**: In `comments.json`, the `Update` entity has a `*highlightedComments` field which points to the `Comment` entity.
-- **Update to Actor**: The `actor` field in an `Update` often contains a reference to a `Profile` or `Company` entity also found in `included`.
+- **Update to Social Counts**: Linked via URN using the activity ID.
+- **Update to Comment**: In \`comments.json\`, the \`Update\` entity has a \`*highlightedComments\` field pointing to the \`Comment\` entity.
 
-## 4. Suggested Pydantic Class Hierarchy
-
-1.  **`BaseEntity`**: Abstract base with `entityUrn` and `$type`.
-2.  **`TextViewModel`**: For parsing text with attributes.
-3.  **`Actor`**: Shared class for Profiles and Companies.
-4.  **`SocialCounts`**: For parsing `SocialActivityCounts`.
-5.  **`Update`**: Main class for posts, with optional fields for `commentary`, `content`, and `resharedUpdate`.
-6.  **`Comment`**: Class for parsing individual comments.
-7.  **`LinkedInResponse`**: Top-level parser for the `data` and `included` structure.
-
-## 5. Pydantic Class Diagram (Mermaid)
+## 5. Pydantic Class Diagram (Activity)
 
 ```mermaid
 classDiagram
@@ -103,7 +85,6 @@ classDiagram
         +TextViewModel commentary
         +Commenter commenter
         +Urn parentComment
-        +Urn threadUrn
     }
 
     class SocialActivityCounts {
@@ -111,50 +92,12 @@ classDiagram
         +int numComments
         +int numShares
         +List~ReactionTypeCount~ reactionTypeCounts
-        +Urn entityUrn
-    }
-
-    class ReactionTypeCount {
-        +int count
-        +str reactionType
-    }
-
-    class TextViewModel {
-        +str text
-        +List~TextAttribute~ attributesV2
-    }
-
-    class TextAttribute {
-        +int start
-        +int length
-        +dict detailData
     }
 
     class Actor {
         +ImageViewModel image
         +TextViewModel name
         +TextViewModel description
-        +Urn profileUrn
-        +Urn companyUrn
-    }
-
-    class ImageViewModel {
-        +List~ImageAttribute~ attributes
-    }
-
-    class ImageAttribute {
-        +VectorImage vectorImage
-    }
-
-    class VectorImage {
-        +str rootUrl
-        +List~VectorArtifact~ artifacts
-    }
-
-    class VectorArtifact {
-        +int width
-        +int height
-        +str fileIdentifyingUrlPathSegment
     }
 
     BaseEntity <|-- Update
@@ -164,10 +107,88 @@ classDiagram
     Update "1" --> "1" Actor : has
     Update "1" --> "0..1" SocialActivityCounts : metrics (linked via URN)
     Comment "1" --> "1" TextViewModel : contains
-    SocialActivityCounts "1" --> "*" ReactionTypeCount : breaks down
-    TextViewModel "1" --> "*" TextAttribute : styled by
     Actor "1" --> "1" ImageViewModel : has avatar
-    ImageViewModel "1" --> "*" ImageAttribute : has
-    ImageAttribute "1" --> "1" VectorImage : contains
-    VectorImage "1" --> "*" VectorArtifact : provides
+```
+
+## 6. Profile Response Analysis
+
+The \`profile.response.json\` also follows the normalized \`data\`/\`included\` pattern. The primary entities are focused on identity and professional history.
+
+### 6.1 Core Profile Entities
+
+- **\`com.linkedin.voyager.dash.identity.profile.Profile\`**: The central entity for user information.
+  - \`firstName\`, \`lastName\`, \`headline\`, \`summary\`.
+  - Links to other collections via URNs (e.g., \`*profileEducations\`, \`*profilePositions\`).
+- **\`com.linkedin.voyager.dash.identity.profile.Position\`**: Represents a job experience.
+  - \`title\`, \`companyName\`, \`description\`, \`locationName\`.
+  - \`dateRange\`: Start and end dates.
+- **\`com.linkedin.voyager.dash.identity.profile.Education\`**: Represents an academic record.
+  - \`schoolName\`, \`degreeName\`, \`fieldOfStudy\`, \`activities\`.
+- **\`com.linkedin.voyager.dash.identity.profile.Skill\`**: Individual professional skills.
+
+### 6.2 Profile-Specific Components
+
+- **\`DateRange\`**: Used in positions and education.
+  - \`start\`, \`end\` (each containing \`month\`, \`year\`).
+- **\`ProfileLocation\`**: Geographic information.
+  - \`countryCode\`.
+- **\`MultiLocaleString\`**: Many fields use a dictionary mapping locale codes to strings (e.g., \`{"en_US": "..."}\`).
+
+### 6.3 Profile Class Diagram (Mermaid)
+
+```mermaid
+classDiagram
+    class Profile {
+        +str firstName
+        +str lastName
+        +str headline
+        +str summary
+        +Urn profileEducations
+        +Urn profilePositions
+        +Urn profileSkills
+        +ProfileLocation location
+    }
+
+    class Position {
+        +str title
+        +str companyName
+        +str description
+        +str locationName
+        +DateRange dateRange
+        +Urn companyUrn
+    }
+
+    class Education {
+        +str schoolName
+        +str degreeName
+        +str fieldOfStudy
+        +str activities
+        +DateRange dateRange
+    }
+
+    class Skill {
+        +str name
+    }
+
+    class DateRange {
+        +Date start
+        +Date end
+    }
+
+    class Date {
+        +int month
+        +int year
+    }
+
+    BaseEntity <|-- Profile
+    BaseEntity <|-- Position
+    BaseEntity <|-- Education
+    BaseEntity <|-- Skill
+
+    Profile "1" --> "*" Position : has (linked via collection)
+    Profile "1" --> "*" Education : has (linked via collection)
+    Profile "1" --> "*" Skill : has (linked via collection)
+    Position "1" --> "1" DateRange : occurred during
+    Education "1" --> "1" DateRange : occurred during
+    DateRange "1" --> "2" Date : bounded by
 ```
