@@ -1,0 +1,2377 @@
+{
+    "data": {
+        "entityUrn": "urn:li:collectionResponse:Z4WofqwXuJ68/y38eRzAOsIIYkFjZIvxO5EZE/GqBCo=",
+        "paging": {
+            "count": 10,
+            "start": 0,
+            "links": []
+        },
+        "*elements": [
+            "urn:li:fsd_profile:ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY"
+        ],
+        "$type": "com.linkedin.restli.common.CollectionResponse"
+    },
+    "included": [
+        {
+            "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:9I8OkjnDoT9g394LyIHlY1VMuGl2lrBtNkzWhx5KCXI=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:rwXXnERLsKZaZjpe//e3PYAPKCjXDCS+CyzC9lC0L5w=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:C/OQCBm6sIF46Q2ZVN3Cr+7qfQzcS4q6F7PVf9lYxG8=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileHonorsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:xkfN2glKogVp20utq9ghVXr5tjYubbrye0wt2qFMe5M=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileCoursesInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,1858676923)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:7hNPzOSlabwyf5mY0W4sgNZorZ+zWo092Dv5/kP3oDA=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:aTZPJxA4yGS5BqeEfjEAttzOb2BcpoG/GSPLS0brRhI=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:3Im2D2veuI+1Ay7zTcJAe/67RqqWznFT6V3ouCyoo2I=",
+            "$recipeTypes": [
+                "com.linkedin.deco.recipe.anonymous.Anon1936086081"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profileEducation:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,57313804)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:6kGnd5YkvpSqF3juwEu+f7ylL3UpLuI19nV9MQyJw+0=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducationsInjection"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:ij06ZS0PXotjlkxjbOfgNIb5R+ZwEDSayY+vVAc0arg=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileCertificationsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:9vV5mvTeRJQfZyJ8jIHcJtH6/gmIO/pGJqe9JfyEQng=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTestScoresInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 39,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,3)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,6)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,7)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,8)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,10)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,11)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,13)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,14)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,15)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,16)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,17)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,18)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,20)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,21)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,34)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,35)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,36)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,37)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,38)",
+                "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,39)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:lcqQaTsp9sUkpr39FIGwft5iSWkgC9hQRDkisv/MKjY=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkillsInjection"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 2,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profileLanguage:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,25)",
+                "urn:li:fsd_profileLanguage:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,26)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:WnvMpaafnAhRksO+UOCTYhdnE8Z8voi8jMa64nouV7U=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileLanguagesInjection"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,278275119)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:rm7Qpq2+UQoXnp2u4X3CbRVR2CD/16pz3JmHmnaN7TM=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:tKtS8DcGU02Uths07gWBPZTMNlwu2fPx82puIFqyNGg=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePatentsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,2811812172)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:NtZW5VSRttAae5Go1xfrwxcK0AtjTHkP6EzPjyZEdQ8=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:RySakMoBTAm2CoBGF8XNdpcB7whjF0ckLmy8O1bGKHY=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:OaSbG3h6Bnl2gQMqcSyAe8lZ29nwP5oxjOHQn40+QMs=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileOrganizationsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,759312097)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:21lZ4LwgZqEDMidNwQ2nh2NLGMlp/nK+pqHVJXuQ5cM=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:swwM7bBPeJliwoWtZConQ9pdwWCO0Bxl2VuHoyzaYHM=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:6A3OUKHoB8AFJz0KPdYvZeEob/g2unAYGr5Gh9tSEh4=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePublicationsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,476029967)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:UwscaF1obpw099KyMkTiPxttkzrKHFvZfVguoKOfLpw=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:e8rPaCO0oCYu/uTjAzt66OlGrmTYPmGIETDbg+bsoEk=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileVolunteerExperiencesInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:bGojvOWtEFfALR3YZRtfA+I2804whXh3Vurmg9GW018=",
+            "$recipeTypes": [
+                "com.linkedin.deco.recipe.anonymous.Anon105506655"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,1356252834)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:/sjxeFrUzi+g6XUf29qxBRV53xmaY+9fkqkz9r1eutI=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:bTdrd23BnWrft3cJ1I+49fZBRFh/GBZkl4xbtlkgIOs=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileProjectsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:6oQm3SflHDqW/3TUGvcRJPDQX81oiT9zdCZoD2wu3RA=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:LzRmOJPwoS8UUSPEEQS5LIBzoVWZ0Ix6EDDdUNV7L7A=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "entityUrn": "urn:li:collectionResponse:8jGmo1B5BWlJwpanQiza4AbsTQ9M+PVWyAAK8/eJR50=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection"
+            ],
+            "elements": [],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "paging": {
+                "total": 6,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.FullPaging"
+                ],
+                "$type": "com.linkedin.restli.common.CollectionMetadata"
+            },
+            "*elements": [
+                "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,32daab328fefc166cc0e96bc4b884f7e4cd31cd9)",
+                "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,d80b9c2a385aa72820fe0e1cb76af613deff7677)",
+                "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,a6f1ed125845d2d4d1fa9abe19f63a065e20231a)",
+                "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,616f70f44df14f9bc7c0ea4c51cd1f5403e265e2)",
+                "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,8dc88bf208774e009a9266e0aa59e19811c42fb8)",
+                "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,d635bb7509fbbe6101231d33db836c4500943c58)"
+            ],
+            "entityUrn": "urn:li:collectionResponse:gWtSIjWWmo7rhKMvFIKEHIn0dBoo/c2Er6jLEG4KPac=",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroupsInjection"
+            ],
+            "$type": "com.linkedin.restli.common.CollectionResponse"
+        },
+        {
+            "countryUrn": "urn:li:fsd_geo:103644278",
+            "defaultLocalizedNameWithoutCountryName": "Pleasanton, California",
+            "*country": "urn:li:fsd_geo:103644278",
+            "entityUrn": "urn:li:fsd_geo:105538613",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.Geo"
+            ],
+            "defaultLocalizedName": "Pleasanton, California, United States",
+            "$type": "com.linkedin.voyager.dash.common.Geo"
+        },
+        {
+            "entityUrn": "urn:li:fsd_geo:102095887",
+            "$recipeTypes": [
+                "com.linkedin.deco.recipe.anonymous.Anon1271139837"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Geo"
+        },
+        {
+            "entityUrn": "urn:li:fsd_geo:106550562",
+            "$recipeTypes": [
+                "com.linkedin.deco.recipe.anonymous.Anon1271139837"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Geo"
+        },
+        {
+            "entityUrn": "urn:li:fsd_geo:103644278",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.CountryGeo"
+            ],
+            "defaultLocalizedName": "United States",
+            "$type": "com.linkedin.voyager.dash.common.Geo"
+        },
+        {
+            "entityUrn": "urn:li:fsd_industry:83",
+            "name": "Printing",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.common.Industry"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Industry"
+        },
+        {
+            "entityUrn": "urn:li:fsd_industry:86",
+            "name": "Environmental Services",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.common.Industry"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Industry"
+        },
+        {
+            "entityUrn": "urn:li:fsd_industry:137",
+            "name": "Human Resources",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.common.Industry"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Industry"
+        },
+        {
+            "entityUrn": "urn:li:fsd_industry:14",
+            "name": "Hospital & Health Care",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.common.Industry"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Industry"
+        },
+        {
+            "entityUrn": "urn:li:fsd_industry:122",
+            "name": "Facilities Services",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.common.Industry"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Industry"
+        },
+        {
+            "entityUrn": "urn:li:fsd_industry:124",
+            "name": "Health, Wellness & Fitness",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.common.Industry"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Industry"
+        },
+        {
+            "entityUrn": "urn:li:fsd_industry:88",
+            "name": "Individual & Family Services",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.common.Industry"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Industry"
+        },
+        {
+            "entityUrn": "urn:li:fsd_region:(us,0)",
+            "$recipeTypes": [
+                "com.linkedin.deco.recipe.anonymous.Anon316625974"
+            ],
+            "$type": "com.linkedin.voyager.dash.common.Region"
+        },
+        {
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "abcc0b8d-7f1a-4218-b9b9-e014d0ba72e4"
+            },
+            "dateRange": null,
+            "description": null,
+            "*company": "urn:li:fsd_company:157344",
+            "*profileTreasuryMediaEducation": "urn:li:collectionResponse:swwM7bBPeJliwoWtZConQ9pdwWCO0Bxl2VuHoyzaYHM=",
+            "companyUrn": "urn:li:fsd_company:157344",
+            "schoolUrn": "urn:li:fsd_school:17911",
+            "entityUrn": "urn:li:fsd_profileEducation:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,57313804)",
+            "standardizedFieldOfStudyUrn": null,
+            "schoolName": "San Jose State University",
+            "fieldOfStudy": "Business",
+            "degreeName": "Bachelors",
+            "multiLocaleGrade": null,
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducation"
+            ],
+            "multiLocaleSchoolName": {
+                "en_US": "San Jose State University"
+            },
+            "$type": "com.linkedin.voyager.dash.identity.profile.Education",
+            "multiLocaleActivities": {
+                "en_US": "Financial Management Association"
+            },
+            "activities": "Financial Management Association",
+            "grade": null,
+            "*school": "urn:li:fsd_school:17911",
+            "multiLocaleFieldOfStudy": {
+                "en_US": "Business"
+            },
+            "multiLocaleDescription": null,
+            "multiLocaleDegreeName": {
+                "en_US": "Bachelors"
+            },
+            "degreeUrn": null
+        },
+        {
+            "entityUrn": "urn:li:fsd_employmentType:12",
+            "companyNameRequired": true,
+            "name": "Full-time",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.EmploymentType"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.EmploymentType"
+        },
+        {
+            "entityUrn": "urn:li:fsd_profileLanguage:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,25)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "4c3fac78-4c86-490a-93e1-ed0f04c32c33"
+            },
+            "multiLocaleName": {
+                "en_US": "ENGLISH"
+            },
+            "name": "ENGLISH",
+            "$recipeTypes": [
+                "com.linkedin.deco.recipe.anonymous.Anon608483337"
+            ],
+            "proficiency": null,
+            "$type": "com.linkedin.voyager.dash.identity.profile.Language"
+        },
+        {
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "3ef6e9ba-f0b5-4ca9-bf55-c578d635c1d1"
+            },
+            "$recipeTypes": [
+                "com.linkedin.deco.recipe.anonymous.Anon608483337"
+            ],
+            "proficiency": "FULL_PROFESSIONAL",
+            "$type": "com.linkedin.voyager.dash.identity.profile.Language",
+            "entityUrn": "urn:li:fsd_profileLanguage:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,26)",
+            "multiLocaleName": {
+                "en_US": "Spanish"
+            },
+            "name": "Spanish"
+        },
+        {
+            "dateRange": {
+                "start": {
+                    "month": 8,
+                    "year": 2018,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 10,
+                    "year": 2021,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "Resource Label Group LLC"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "6f7b51a2-2e8d-4b26-b523-bf646dbeedb3"
+            },
+            "companyName": "Resource Label Group LLC",
+            "description": "LOCATIONS: Cellotape in Newark, CA, TekLabel in Milpitas, CA and Paragon in Petaluma, CA\n\nEnsures policies, procedures, and reporting are in compliance\nCoordinates training for employees in safety programs\nRecruiting\nNew employee orientation\nEmployee relations issues such as disciplinary actions, terminations, promotions, and performance review\nAdministers payroll \nAdministers benefits open enrollment\nWorker's Compensation\nCoordinating ISO trainings\nother duties HR duties supporting Cellotape and Resource Label Group.",
+            "*company": "urn:li:fsd_company:1420123",
+            "title": "Multi-Site Human Resources Professional",
+            "companyUrn": "urn:li:fsd_company:1420123",
+            "*region": "urn:li:fsd_region:(us,0)",
+            "entityUrn": "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,1356252834)",
+            "multiLocaleGeoLocationName": {
+                "en_US": "Newark, California, United States"
+            },
+            "shouldShowSourceOfHireBadge": false,
+            "locationName": "Newark, California, United States",
+            "*profileTreasuryMediaPosition": "urn:li:collectionResponse:RySakMoBTAm2CoBGF8XNdpcB7whjF0ckLmy8O1bGKHY=",
+            "multiLocaleTitle": {
+                "en_US": "Multi-Site Human Resources Professional"
+            },
+            "geoUrn": "urn:li:fsd_geo:106550562",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Position",
+            "regionUrn": "urn:li:fsd_region:(us,0)",
+            "*geo": "urn:li:fsd_geo:106550562",
+            "geoLocationName": "Newark, California, United States",
+            "multiLocaleDescription": {
+                "en_US": "LOCATIONS: Cellotape in Newark, CA, TekLabel in Milpitas, CA and Paragon in Petaluma, CA\n\nEnsures policies, procedures, and reporting are in compliance\nCoordinates training for employees in safety programs\nRecruiting\nNew employee orientation\nEmployee relations issues such as disciplinary actions, terminations, promotions, and performance review\nAdministers payroll \nAdministers benefits open enrollment\nWorker's Compensation\nCoordinating ISO trainings\nother duties HR duties supporting Cellotape and Resource Label Group."
+            },
+            "multiLocaleLocationName": {
+                "en_US": "Newark, California, United States"
+            }
+        },
+        {
+            "dateRange": {
+                "start": {
+                    "month": 10,
+                    "year": 2021,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 11,
+                    "year": 2025,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "California Skin Institute"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "e594768a-1ab6-4123-bf47-e5d2aab52fd6"
+            },
+            "companyName": "California Skin Institute",
+            "description": "Strategic HR Leadership Responsibilities\n\n- Spearhead initiatives to enhance organizational effectiveness by developing and implementing comprehensive people operations strategies aligned with the company’s growth objectives.\n- Oversee and streamline all HR functions, ensuring both tactical execution and strategic alignment with organizational goals, while reporting directly to the CEO.\n- Collaborate with executive leadership to identify and address organizational capability needs, formulating targeted development plans, recruitment strategies, and retention programs to build a high-performing workforce.\n- Partner with Department, Regional, and Clinic Managers to resolve HR challenges and drive a culture focused on performance and accountability.\n- Act as a change agent by proactively assessing strategic drivers of change and crafting execution plans to support the organization’s expansion initiatives.\n- Lead the integration of HR practices for onboarding new employees from acquired businesses, ensuring a seamless transition and alignment with company culture.\n- Conduct thorough analyses to identify competency and talent gaps, designing and implementing tailored solutions to enhance leadership capabilities across the organization.\n- Manage the coordination and execution of company-wide performance reviews and compensation adjustments to promote employee engagement and retention.\n- Stay abreast of legal compliance and regulatory requirements impacting HR functions, ensuring that all policies and procedures adhere to relevant legislation.\n- Oversee external HR partnerships and Professional Employer Organization (PEO) relationships to optimize compliance, training, benefits, and other essential HR programs.",
+            "*company": "urn:li:fsd_company:1532867",
+            "title": "Human Resources Manager",
+            "companyUrn": "urn:li:fsd_company:1532867",
+            "entityUrn": "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,1858676923)",
+            "shouldShowSourceOfHireBadge": false,
+            "*profileTreasuryMediaPosition": "urn:li:collectionResponse:LzRmOJPwoS8UUSPEEQS5LIBzoVWZ0Ix6EDDdUNV7L7A=",
+            "multiLocaleTitle": {
+                "en_US": "Human Resources Manager"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Position",
+            "multiLocaleDescription": {
+                "en_US": "Strategic HR Leadership Responsibilities\n\n- Spearhead initiatives to enhance organizational effectiveness by developing and implementing comprehensive people operations strategies aligned with the company’s growth objectives.\n- Oversee and streamline all HR functions, ensuring both tactical execution and strategic alignment with organizational goals, while reporting directly to the CEO.\n- Collaborate with executive leadership to identify and address organizational capability needs, formulating targeted development plans, recruitment strategies, and retention programs to build a high-performing workforce.\n- Partner with Department, Regional, and Clinic Managers to resolve HR challenges and drive a culture focused on performance and accountability.\n- Act as a change agent by proactively assessing strategic drivers of change and crafting execution plans to support the organization’s expansion initiatives.\n- Lead the integration of HR practices for onboarding new employees from acquired businesses, ensuring a seamless transition and alignment with company culture.\n- Conduct thorough analyses to identify competency and talent gaps, designing and implementing tailored solutions to enhance leadership capabilities across the organization.\n- Manage the coordination and execution of company-wide performance reviews and compensation adjustments to promote employee engagement and retention.\n- Stay abreast of legal compliance and regulatory requirements impacting HR functions, ensuring that all policies and procedures adhere to relevant legislation.\n- Oversee external HR partnerships and Professional Employer Organization (PEO) relationships to optimize compliance, training, benefits, and other essential HR programs."
+            }
+        },
+        {
+            "dateRange": {
+                "start": {
+                    "month": 1,
+                    "year": 2026,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "JumpstartMD"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "ee26815d-0c84-43a5-9f58-69ea3f9d2a89"
+            },
+            "companyName": "JumpstartMD",
+            "*company": "urn:li:fsd_company:1181273",
+            "title": "Senior Director of Human Resources",
+            "companyUrn": "urn:li:fsd_company:1181273",
+            "*employmentType": "urn:li:fsd_employmentType:12",
+            "*region": "urn:li:fsd_region:(us,0)",
+            "employmentTypeUrn": "urn:li:fsd_employmentType:12",
+            "entityUrn": "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,2811812172)",
+            "multiLocaleGeoLocationName": {
+                "en_US": "California, United States"
+            },
+            "shouldShowSourceOfHireBadge": false,
+            "locationName": "California, United States",
+            "*profileTreasuryMediaPosition": "urn:li:collectionResponse:rwXXnERLsKZaZjpe//e3PYAPKCjXDCS+CyzC9lC0L5w=",
+            "multiLocaleTitle": {
+                "en_US": "Senior Director of Human Resources"
+            },
+            "geoUrn": "urn:li:fsd_geo:102095887",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Position",
+            "regionUrn": "urn:li:fsd_region:(us,0)",
+            "*geo": "urn:li:fsd_geo:102095887",
+            "geoLocationName": "California, United States",
+            "multiLocaleLocationName": {
+                "en_US": "California, United States"
+            }
+        },
+        {
+            "dateRange": {
+                "start": {
+                    "month": 4,
+                    "year": 2012,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 10,
+                    "year": 2013,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "Impec Group"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "f3d8b920-5363-4363-b538-c08ebb40d6b1"
+            },
+            "companyName": "Impec Group",
+            "description": "•\tResponsible for the recruitment and placement of all talent, from entry level positions to senior management.\n•\tCreated New Hire Orientation Presentation to include: company history, executive bios, uniform policy, timesheet procedures, code of conduct, holiday schedule, company resources, and other HR information\n•\tTrained all managers and supervisors on interviewing techniques and best practices\n•\tAdministered all Worker’s Compensation and FMLA Cases\n•\tTraining all payroll staff on procedures, overtime calculations, Prevailing Wage, Living Wage and other wage ordinances.\n•\tManaged personnel records, and administered benefits enrollment and programs\n•\tRepresenting the company in labor hearings\n•\tResponsible for Certified Payroll\n•                  Employee Benefits Administration including enrollments, terminations, and changes;\n•                 Conflict resolution with employees - re: issues, problems, questions\n•                 Monitor compliance of various HR-related issues (Employee Handbook, OSHA, Federal Postings, etc.)",
+            "*company": "urn:li:fsd_company:2338967",
+            "title": "Human Resources Generalist",
+            "companyUrn": "urn:li:fsd_company:2338967",
+            "entityUrn": "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,278275119)",
+            "multiLocaleGeoLocationName": {
+                "en_US": "Santa Clara, Ca"
+            },
+            "shouldShowSourceOfHireBadge": false,
+            "locationName": "Santa Clara, Ca",
+            "*profileTreasuryMediaPosition": "urn:li:collectionResponse:aTZPJxA4yGS5BqeEfjEAttzOb2BcpoG/GSPLS0brRhI=",
+            "multiLocaleTitle": {
+                "en_US": "Human Resources Generalist"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Position",
+            "geoLocationName": "Santa Clara, Ca",
+            "multiLocaleDescription": {
+                "en_US": "•\tResponsible for the recruitment and placement of all talent, from entry level positions to senior management.\n•\tCreated New Hire Orientation Presentation to include: company history, executive bios, uniform policy, timesheet procedures, code of conduct, holiday schedule, company resources, and other HR information\n•\tTrained all managers and supervisors on interviewing techniques and best practices\n•\tAdministered all Worker’s Compensation and FMLA Cases\n•\tTraining all payroll staff on procedures, overtime calculations, Prevailing Wage, Living Wage and other wage ordinances.\n•\tManaged personnel records, and administered benefits enrollment and programs\n•\tRepresenting the company in labor hearings\n•\tResponsible for Certified Payroll\n•                  Employee Benefits Administration including enrollments, terminations, and changes;\n•                 Conflict resolution with employees - re: issues, problems, questions\n•                 Monitor compliance of various HR-related issues (Employee Handbook, OSHA, Federal Postings, etc.)"
+            },
+            "multiLocaleLocationName": {
+                "en_US": "Santa Clara, Ca"
+            }
+        },
+        {
+            "dateRange": {
+                "start": {
+                    "month": 1,
+                    "year": 2016,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 7,
+                    "year": 2018,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "LandCare (formerly TruGreen LandCare)"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "07748539-6848-4bef-b621-deb353c39cfc"
+            },
+            "companyName": "LandCare (formerly TruGreen LandCare)",
+            "description": "REGIONS: Northern California, Oregon, and Washington \n\n•Integral part of the roll out, reinforcement, and follow-up of company Recruitment and Retention Program\n• Helped attain company goal of reducing turnover from 102% to 50% \n• Analyze branch turn over and trends to forecast appropriate recruitment activities\n•Train hiring managers on interviewing techniques and guidelines \n• Develop recruitment/marketing strategies to peak candidate interest\n• Utilize online recruiting resources, review resumes and credentials for appropriateness of skills, experience and knowledge in relation to position requirements. Screen potential candidates, coordinate/conduct interview, and on-board new hires\n• Recruit, screen, evaluate and match qualified candidates to branch needs\n• Organize, plan, and participate in college career fairs and job fairs to recruit top talent",
+            "*company": "urn:li:fsd_company:166512",
+            "title": "Regional Human Resources Business Partner",
+            "companyUrn": "urn:li:fsd_company:166512",
+            "entityUrn": "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,759312097)",
+            "shouldShowSourceOfHireBadge": false,
+            "*profileTreasuryMediaPosition": "urn:li:collectionResponse:9I8OkjnDoT9g394LyIHlY1VMuGl2lrBtNkzWhx5KCXI=",
+            "multiLocaleTitle": {
+                "en_US": "Regional Human Resources Business Partner"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Position",
+            "multiLocaleDescription": {
+                "en_US": "REGIONS: Northern California, Oregon, and Washington \n\n•Integral part of the roll out, reinforcement, and follow-up of company Recruitment and Retention Program\n• Helped attain company goal of reducing turnover from 102% to 50% \n• Analyze branch turn over and trends to forecast appropriate recruitment activities\n•Train hiring managers on interviewing techniques and guidelines \n• Develop recruitment/marketing strategies to peak candidate interest\n• Utilize online recruiting resources, review resumes and credentials for appropriateness of skills, experience and knowledge in relation to position requirements. Screen potential candidates, coordinate/conduct interview, and on-board new hires\n• Recruit, screen, evaluate and match qualified candidates to branch needs\n• Organize, plan, and participate in college career fairs and job fairs to recruit top talent"
+            }
+        },
+        {
+            "dateRange": {
+                "start": {
+                    "month": 10,
+                    "year": 2013,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 12,
+                    "year": 2015,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "ACES (Autism Comprehensive Educational Services)"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "1874b7bc-6c64-4ee1-9e1f-86f0bd768d38"
+            },
+            "companyName": "ACES (Autism Comprehensive Educational Services)",
+            "description": "Human Resources Manager for Northern California Division \nLOCATIONS: San Jose, Concord, Santa Rosa, and San Bruno\n\nResponsibilities include but not limited to:\n\n - Working collaboratively with managers and clinical leadership to provide coaching and advice in all areas of employee relations, performance management, and policy interpretation.\n\n - Conducting all internal investigations and making recommendations for appropriate actions.\n\n - Creating and administering all documentation including but not limited to corrective action, performance, and termination.\n\n - Conducting new hire training and all on-boarding functions.\n\n - Performing all Benefit, Payroll, Worker's Compensation, EDD, and LOA/FMLA administration.\n\n - Identifying legal and compliance risks within the organization and collaborating with legal counsel to mitigate these risks.",
+            "*company": "urn:li:fsd_company:2910789",
+            "title": "Employee Relations Consultant",
+            "companyUrn": "urn:li:fsd_company:2910789",
+            "entityUrn": "urn:li:fsd_profilePosition:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,476029967)",
+            "multiLocaleGeoLocationName": {
+                "en_US": "San Jose, California"
+            },
+            "shouldShowSourceOfHireBadge": false,
+            "locationName": "San Jose, California",
+            "*profileTreasuryMediaPosition": "urn:li:collectionResponse:6oQm3SflHDqW/3TUGvcRJPDQX81oiT9zdCZoD2wu3RA=",
+            "multiLocaleTitle": {
+                "en_US": "Employee Relations Consultant"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Position",
+            "geoLocationName": "San Jose, California",
+            "multiLocaleDescription": {
+                "en_US": "Human Resources Manager for Northern California Division \nLOCATIONS: San Jose, Concord, Santa Rosa, and San Bruno\n\nResponsibilities include but not limited to:\n\n - Working collaboratively with managers and clinical leadership to provide coaching and advice in all areas of employee relations, performance management, and policy interpretation.\n\n - Conducting all internal investigations and making recommendations for appropriate actions.\n\n - Creating and administering all documentation including but not limited to corrective action, performance, and termination.\n\n - Conducting new hire training and all on-boarding functions.\n\n - Performing all Benefit, Payroll, Worker's Compensation, EDD, and LOA/FMLA administration.\n\n - Identifying legal and compliance risks within the organization and collaborating with legal counsel to mitigate these risks."
+            },
+            "multiLocaleLocationName": {
+                "en_US": "San Jose, California"
+            }
+        },
+        {
+            "*profilePositionInPositionGroup": "urn:li:collectionResponse:UwscaF1obpw099KyMkTiPxttkzrKHFvZfVguoKOfLpw=",
+            "dateRange": {
+                "start": {
+                    "month": 10,
+                    "year": 2013,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 12,
+                    "year": 2015,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "ACES (Autism Comprehensive Educational Services)"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "47142149-2c0e-44d5-bbc4-4eecaca97c49"
+            },
+            "companyName": "ACES (Autism Comprehensive Educational Services)",
+            "*company": "urn:li:fsd_company:2910789",
+            "companyUrn": "urn:li:fsd_company:2910789",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.PositionGroup",
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,8dc88bf208774e009a9266e0aa59e19811c42fb8)"
+        },
+        {
+            "*profilePositionInPositionGroup": "urn:li:collectionResponse:rm7Qpq2+UQoXnp2u4X3CbRVR2CD/16pz3JmHmnaN7TM=",
+            "dateRange": {
+                "start": {
+                    "month": 4,
+                    "year": 2012,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 10,
+                    "year": 2013,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "Impec Group"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "386e1bca-6fbc-461c-9951-0ef766de01bd"
+            },
+            "companyName": "Impec Group",
+            "*company": "urn:li:fsd_company:2338967",
+            "companyUrn": "urn:li:fsd_company:2338967",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.PositionGroup",
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,d635bb7509fbbe6101231d33db836c4500943c58)"
+        },
+        {
+            "*profilePositionInPositionGroup": "urn:li:collectionResponse:21lZ4LwgZqEDMidNwQ2nh2NLGMlp/nK+pqHVJXuQ5cM=",
+            "dateRange": {
+                "start": {
+                    "month": 1,
+                    "year": 2016,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 7,
+                    "year": 2018,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "LandCare (formerly TruGreen LandCare)"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "fa38e32d-23af-4067-8ee7-09c3a67df13a"
+            },
+            "companyName": "LandCare (formerly TruGreen LandCare)",
+            "*company": "urn:li:fsd_company:166512",
+            "companyUrn": "urn:li:fsd_company:166512",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.PositionGroup",
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,616f70f44df14f9bc7c0ea4c51cd1f5403e265e2)"
+        },
+        {
+            "*profilePositionInPositionGroup": "urn:li:collectionResponse:7hNPzOSlabwyf5mY0W4sgNZorZ+zWo092Dv5/kP3oDA=",
+            "dateRange": {
+                "start": {
+                    "month": 10,
+                    "year": 2021,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 11,
+                    "year": 2025,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "California Skin Institute"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "045325d3-cea6-43ad-8976-2b9963d8d0bb"
+            },
+            "companyName": "California Skin Institute",
+            "*company": "urn:li:fsd_company:1532867",
+            "companyUrn": "urn:li:fsd_company:1532867",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.PositionGroup",
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,d80b9c2a385aa72820fe0e1cb76af613deff7677)"
+        },
+        {
+            "*profilePositionInPositionGroup": "urn:li:collectionResponse:/sjxeFrUzi+g6XUf29qxBRV53xmaY+9fkqkz9r1eutI=",
+            "dateRange": {
+                "start": {
+                    "month": 8,
+                    "year": 2018,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "end": {
+                    "month": 10,
+                    "year": 2021,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "Resource Label Group LLC"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "44748bcf-17cf-430c-bb11-d3885834cfb8"
+            },
+            "companyName": "Resource Label Group LLC",
+            "*company": "urn:li:fsd_company:1420123",
+            "companyUrn": "urn:li:fsd_company:1420123",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.PositionGroup",
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,a6f1ed125845d2d4d1fa9abe19f63a065e20231a)"
+        },
+        {
+            "*profilePositionInPositionGroup": "urn:li:collectionResponse:NtZW5VSRttAae5Go1xfrwxcK0AtjTHkP6EzPjyZEdQ8=",
+            "dateRange": {
+                "start": {
+                    "month": 1,
+                    "year": 2026,
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Date"
+                    ],
+                    "$type": "com.linkedin.common.Date"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.DateRange"
+                ],
+                "$type": "com.linkedin.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+                "en_US": "JumpstartMD"
+            },
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "340795b6-b4e2-4cbf-9baa-a51b7dd69dce"
+            },
+            "companyName": "JumpstartMD",
+            "*company": "urn:li:fsd_company:1181273",
+            "companyUrn": "urn:li:fsd_company:1181273",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.PositionGroup",
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,32daab328fefc166cc0e96bc4b884f7e4cd31cd9)"
+        },
+        {
+            "birthDateOn": {
+                "month": 12,
+                "day": 25,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.Date"
+                ],
+                "$type": "com.linkedin.common.Date"
+            },
+            "multiLocalePhoneticLastName": null,
+            "industryV2Urn": null,
+            "objectUrn": "urn:li:member:77742223",
+            "multiLocaleLastName": {
+                "en_US": "B."
+            },
+            "*profilePositionGroups": "urn:li:collectionResponse:gWtSIjWWmo7rhKMvFIKEHIn0dBoo/c2Er6jLEG4KPac=",
+            "*profileVideoPreview": "urn:li:collectionResponse:bGojvOWtEFfALR3YZRtfA+I2804whXh3Vurmg9GW018=",
+            "*profileCertifications": "urn:li:collectionResponse:ij06ZS0PXotjlkxjbOfgNIb5R+ZwEDSayY+vVAc0arg=",
+            "pronounUnion": null,
+            "multiLocaleFirstNamePronunciationHint": {},
+            "multiLocaleLastNamePronunciationHint": {},
+            "*profileTestScores": "urn:li:collectionResponse:9vV5mvTeRJQfZyJ8jIHcJtH6/gmIO/pGJqe9JfyEQng=",
+            "tempStatusExpiredAtUnion": null,
+            "multiLocaleFirstName": {
+                "en_US": "Brenda"
+            },
+            "multiLocaleTempStatus": null,
+            "companyNameOnProfileTopCardShown": true,
+            "*profileLanguages": "urn:li:collectionResponse:WnvMpaafnAhRksO+UOCTYhdnE8Z8voi8jMa64nouV7U=",
+            "state": null,
+            "publicIdentifier": "brenda-b-86705122",
+            "trackingId": "q5JyX3J+SDe+r9uXL5vshg==",
+            "phoneticFirstName": null,
+            "multiLocaleSummary": {
+                "en_US": "As Director of Human Resources at JumpstartMD, I partner with executive leadership to align people operations with business performance. My focus is building compliant, accountable, and high-performing teams in complex, member-facing healthcare environments.I specialize in:• Strategic workforce planning• Full-cycle recruiting optimization• Multi-site operations support• HR compliance &amp; risk mitigation (California-focused)• Leadership coaching &amp; performance management• Process development &amp; infrastructure scalingWith over 10 years in human resources. I am committed to empowering teams, driving retention initiatives, and implementing solutions that promote organizational effectiveness."
+            },
+            "firstNamePronunciationHint": null,
+            "lastNamePronunciationHint": null,
+            "versionTag": "2492225146",
+            "*profilePatents": "urn:li:collectionResponse:tKtS8DcGU02Uths07gWBPZTMNlwu2fPx82puIFqyNGg=",
+            "associatedHashtagsCopy": null,
+            "profilePicture": {
+                "a11yText": "Brenda B.",
+                "displayImageReference": {
+                    "vectorImage": {
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution"
+                        ],
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/D5603AQF4QyqHa9JZzA/profile-displayphoto-shrink_",
+                        "artifacts": [
+                            {
+                                "width": 400,
+                                "$recipeTypes": [
+                                    "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                                ],
+                                "fileIdentifyingUrlPathSegment": "400_400/B56ZW1.klcGsAg-/0/1742514834741?e=1774483200&v=beta&t=RGrs1_1n_8qZY4uI35chnYau0eQ4RGf551FQBxD_QkQ",
+                                "expiresAt": 1774483200000,
+                                "height": 400,
+                                "$type": "com.linkedin.common.VectorArtifact"
+                            },
+                            {
+                                "width": 200,
+                                "$recipeTypes": [
+                                    "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                                ],
+                                "fileIdentifyingUrlPathSegment": "200_200/B56ZW1.klcGsAY-/0/1742514834741?e=1774483200&v=beta&t=2Qq8blOhvAMiODV4cuRRRQW8BJauGFZ-oByXvTqXHew",
+                                "expiresAt": 1774483200000,
+                                "height": 200,
+                                "$type": "com.linkedin.common.VectorArtifact"
+                            },
+                            {
+                                "width": 787,
+                                "$recipeTypes": [
+                                    "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                                ],
+                                "fileIdentifyingUrlPathSegment": "800_800/B56ZW1.klcGsAc-/0/1742514834742?e=1774483200&v=beta&t=Okq4b6Kq1R9A1cPE1GONFXLdojMdwL1Sf20Pg9oSJuA",
+                                "expiresAt": 1774483200000,
+                                "height": 787,
+                                "$type": "com.linkedin.common.VectorArtifact"
+                            },
+                            {
+                                "width": 100,
+                                "$recipeTypes": [
+                                    "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                                ],
+                                "fileIdentifyingUrlPathSegment": "100_100/B56ZW1.klcGsAU-/0/1742514834712?e=1774483200&v=beta&t=ddSk47UvL3T8PaaHEOphvdLMwoc2nY9fOxbGIlboCIY",
+                                "expiresAt": 1774483200000,
+                                "height": 100,
+                                "$type": "com.linkedin.common.VectorArtifact"
+                            }
+                        ],
+                        "$type": "com.linkedin.common.VectorImage"
+                    }
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.identity.profile.ProfilePhotoDecoSpecEditableProfilePicture"
+                ],
+                "displayImageUrn": "urn:li:digitalmediaAsset:D5603AQF4QyqHa9JZzA",
+                "photoFilterEditInfo": {
+                    "bottomLeft": {
+                        "x": 0,
+                        "y": 0.9999999747378752,
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+                        ],
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
+                    "vignette": 0,
+                    "bottomRight": {
+                        "x": 0.9999999747378752,
+                        "y": 0.9999999747378752,
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+                        ],
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
+                    "topRight": {
+                        "x": 0.9999999747378752,
+                        "y": 0,
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+                        ],
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
+                    "$recipeTypes": [
+                        "com.linkedin.deco.recipe.anonymous.Anon1309211116"
+                    ],
+                    "$type": "com.linkedin.voyager.dash.identity.profile.PhotoFilterEditInfo",
+                    "saturation": 0,
+                    "brightness": 0,
+                    "photoFilterType": "ORIGINAL",
+                    "contrast": 0,
+                    "topLeft": {
+                        "x": 0,
+                        "y": 0,
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+                        ],
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    }
+                },
+                "$type": "com.linkedin.voyager.dash.identity.profile.PhotoFilterPicture"
+            },
+            "firstName": "Brenda",
+            "*profileOrganizations": "urn:li:collectionResponse:OaSbG3h6Bnl2gQMqcSyAe8lZ29nwP5oxjOHQn40+QMs=",
+            "multiLocaleMaidenName": null,
+            "*profileHonors": "urn:li:collectionResponse:C/OQCBm6sIF46Q2ZVN3Cr+7qfQzcS4q6F7PVf9lYxG8=",
+            "*profileSkills": "urn:li:collectionResponse:lcqQaTsp9sUkpr39FIGwft5iSWkgC9hQRDkisv/MKjY=",
+            "multiLocaleHeadline": {
+                "en_US": "Senior Director of Human Resources | Strategic HR Leadership"
+            },
+            "*profileProjects": "urn:li:collectionResponse:bTdrd23BnWrft3cJ1I+49fZBRFh/GBZkl4xbtlkgIOs=",
+            "*profilePublications": "urn:li:collectionResponse:6A3OUKHoB8AFJz0KPdYvZeEob/g2unAYGr5Gh9tSEh4=",
+            "lastName": "B.",
+            "memorialized": false,
+            "multiLocalePhoneticFirstName": null,
+            "volunteerCauses": [
+                "HUMAN_RIGHTS",
+                "CHILDREN",
+                "EDUCATION"
+            ],
+            "*industry": "urn:li:fsd_industry:137",
+            "showPremiumSubscriberBadge": true,
+            "tempStatusEmoji": null,
+            "maidenName": null,
+            "geoLocationBackfilled": false,
+            "multiLocaleFullNamePronunciationAudio": {},
+            "phoneticLastName": null,
+            "premium": true,
+            "influencer": false,
+            "*profileCourses": "urn:li:collectionResponse:xkfN2glKogVp20utq9ghVXr5tjYubbrye0wt2qFMe5M=",
+            "entityUrn": "urn:li:fsd_profile:ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY",
+            "*profileRingStatusCollection": "urn:li:collectionResponse:3Im2D2veuI+1Ay7zTcJAe/67RqqWznFT6V3ouCyoo2I=",
+            "*profileEducations": "urn:li:collectionResponse:6kGnd5YkvpSqF3juwEu+f7ylL3UpLuI19nV9MQyJw+0=",
+            "headline": "Senior Director of Human Resources | Strategic HR Leadership",
+            "fullNamePronunciationAudio": null,
+            "summary": "As Director of Human Resources at JumpstartMD, I partner with executive leadership to align people operations with business performance. My focus is building compliant, accountable, and high-performing teams in complex, member-facing healthcare environments.I specialize in:• Strategic workforce planning• Full-cycle recruiting optimization• Multi-site operations support• HR compliance &amp; risk mitigation (California-focused)• Leadership coaching &amp; performance management• Process development &amp; infrastructure scalingWith over 10 years in human resources. I am committed to empowering teams, driving retention initiatives, and implementing solutions that promote organizational effectiveness.",
+            "creator": true,
+            "supportedLocales": [
+                {
+                    "country": "US",
+                    "language": "en",
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.Locale"
+                    ],
+                    "$type": "com.linkedin.common.Locale"
+                }
+            ],
+            "address": null,
+            "locationName": null,
+            "multiLocaleAddress": null,
+            "*profileVolunteerExperiences": "urn:li:collectionResponse:e8rPaCO0oCYu/uTjAzt66OlGrmTYPmGIETDbg+bsoEk=",
+            "educationOnProfileTopCardShown": true,
+            "industryUrn": "urn:li:fsd_industry:137",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Profile",
+            "coverPhotoItems": [],
+            "geoLocation": {
+                "*geo": "urn:li:fsd_geo:105538613",
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.identity.profile.ProfileGeoLocation"
+                ],
+                "geoUrn": "urn:li:fsd_geo:105538613",
+                "$type": "com.linkedin.voyager.dash.identity.profile.ProfileGeoLocation"
+            },
+            "tempStatus": null,
+            "*profileTreasuryMediaProfile": "urn:li:collectionResponse:8jGmo1B5BWlJwpanQiza4AbsTQ9M+PVWyAAK8/eJR50=",
+            "location": {
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.identity.profile.ProfileLocation"
+                ],
+                "countryCode": "us",
+                "$type": "com.linkedin.voyager.dash.identity.profile.ProfileLocation"
+            },
+            "primaryLocale": {
+                "country": "US",
+                "language": "en",
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.Locale"
+                ],
+                "$type": "com.linkedin.common.Locale"
+            },
+            "backgroundPicture": {
+                "displayImageReference": {
+                    "vectorImage": {
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution"
+                        ],
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/D5616AQENMWltKHcOcg/profile-displaybackgroundimage-shrink_",
+                        "artifacts": [
+                            {
+                                "width": 1200,
+                                "$recipeTypes": [
+                                    "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                                ],
+                                "fileIdentifyingUrlPathSegment": "350_1400/B56Zb5cqt4GsAk-/0/1747941764584?e=1774483200&v=beta&t=P0kJaKiD1wPSp-2fM0a41N4nO9nlAjdtfk7_F6nj85k",
+                                "expiresAt": 1774483200000,
+                                "height": 300,
+                                "$type": "com.linkedin.common.VectorArtifact"
+                            },
+                            {
+                                "width": 800,
+                                "$recipeTypes": [
+                                    "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                                ],
+                                "fileIdentifyingUrlPathSegment": "200_800/B56Zb5cqt4GsAg-/0/1747941764584?e=1774483200&v=beta&t=RiE11VQsOkRM2IIdUKxsEZSrDSHfa0DedoBLlbVnWtU",
+                                "expiresAt": 1774483200000,
+                                "height": 200,
+                                "$type": "com.linkedin.common.VectorArtifact"
+                            }
+                        ],
+                        "$type": "com.linkedin.common.VectorImage"
+                    }
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.identity.profile.ProfilePhotoDecoSpecEditableBackgroundPicture"
+                ],
+                "displayImageUrn": "urn:li:digitalmediaAsset:D5616AQENMWltKHcOcg",
+                "photoFilterEditInfo": {
+                    "bottomLeft": {
+                        "x": 0,
+                        "y": 0.7454446628924517,
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+                        ],
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
+                    "vignette": 0,
+                    "bottomRight": {
+                        "x": 1,
+                        "y": 0.7454446628924517,
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+                        ],
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
+                    "topRight": {
+                        "x": 1,
+                        "y": 0.2437724220897761,
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+                        ],
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
+                    "$recipeTypes": [
+                        "com.linkedin.deco.recipe.anonymous.Anon1309211116"
+                    ],
+                    "$type": "com.linkedin.voyager.dash.identity.profile.PhotoFilterEditInfo",
+                    "saturation": 0,
+                    "brightness": 0,
+                    "photoFilterType": "ORIGINAL",
+                    "contrast": 0,
+                    "topLeft": {
+                        "x": 0,
+                        "y": 0.2437724220897761,
+                        "$recipeTypes": [
+                            "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+                        ],
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    }
+                },
+                "$type": "com.linkedin.voyager.dash.identity.profile.PhotoFilterPicture"
+            }
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,37)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "1fc7f3b7-5d26-4761-ab42-b16e7d8c5b93"
+            },
+            "multiLocaleName": {
+                "en_US": "Payroll"
+            },
+            "name": "Payroll",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,13)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "88ceba79-97db-4369-b3eb-b6783039f191"
+            },
+            "multiLocaleName": {
+                "en_US": "Interviews"
+            },
+            "name": "Interviews",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,21)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "7569ed36-683a-415e-b462-bb2e03db1637"
+            },
+            "multiLocaleName": {
+                "en_US": "Auditing"
+            },
+            "name": "Auditing",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,7)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "8d111fb7-6166-4947-bf04-1e7066b4857e"
+            },
+            "multiLocaleName": {
+                "en_US": "Excel"
+            },
+            "name": "Excel",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,18)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "23a7e54f-ae8d-4100-b20e-f91dde1b3c44"
+            },
+            "multiLocaleName": {
+                "en_US": "Word"
+            },
+            "name": "Word",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,3)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "d7e2dcce-5106-4845-ac81-2406930dad47"
+            },
+            "multiLocaleName": {
+                "en_US": "Human Resources (HR)"
+            },
+            "name": "Human Resources (HR)",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,38)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "980c16d3-ec7a-4ab5-9586-215690921d2b"
+            },
+            "multiLocaleName": {
+                "en_US": "Account Reconciliation"
+            },
+            "name": "Account Reconciliation",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,14)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "7452d9ee-e486-40f4-9e69-2703b9ea2cac"
+            },
+            "multiLocaleName": {
+                "en_US": "New Hire Orientations"
+            },
+            "name": "New Hire Orientations",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,34)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "f6e7e924-af51-4703-b689-95322b9e6a39"
+            },
+            "multiLocaleName": {
+                "en_US": "Financial Reporting"
+            },
+            "name": "Financial Reporting",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,10)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "752b6019-6bbb-47e5-8009-44552556e066"
+            },
+            "multiLocaleName": {
+                "en_US": "Human Resources"
+            },
+            "name": "Human Resources",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,6)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "fe2935ae-f003-4aab-8bec-92a55eca60ee"
+            },
+            "multiLocaleName": {
+                "en_US": "Spreadsheets"
+            },
+            "name": "Spreadsheets",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,39)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "230fc2c7-6177-428b-9299-e09d4967f03b"
+            },
+            "multiLocaleName": {
+                "en_US": "Accounts Receivable"
+            },
+            "name": "Accounts Receivable",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,15)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "05f31e41-7e23-4c9c-ae4a-157c3cd916e2"
+            },
+            "multiLocaleName": {
+                "en_US": "Negotiation"
+            },
+            "name": "Negotiation",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,35)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "56830f18-fa59-4414-9ec3-726296e85d7e"
+            },
+            "multiLocaleName": {
+                "en_US": "Exit Interviews"
+            },
+            "name": "Exit Interviews",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,11)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "0acd3ab9-f8f6-49d9-b07c-aa0ad67b7e1d"
+            },
+            "multiLocaleName": {
+                "en_US": "Recruiting"
+            },
+            "name": "Recruiting",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,16)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "63f4801a-05a1-421d-a5d3-2f83c7a74ca5"
+            },
+            "multiLocaleName": {
+                "en_US": "Hiring Practices"
+            },
+            "name": "Hiring Practices",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,36)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "a8a0cccc-8b21-498d-97b2-9cc62685c447"
+            },
+            "multiLocaleName": {
+                "en_US": "Accounting"
+            },
+            "name": "Accounting",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,20)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "6db1dedf-3383-4513-b366-0a1a956f3522"
+            },
+            "multiLocaleName": {
+                "en_US": "PowerPoint"
+            },
+            "name": "PowerPoint",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,8)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "7e7123e4-5c7f-4f8f-b18b-4e3e79c5f187"
+            },
+            "multiLocaleName": {
+                "en_US": "Outlook"
+            },
+            "name": "Outlook",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAASiQI8BygAlP4P0v6SCBkesDTPnt6_azgY,17)",
+            "$anti_abuse_metadata": {
+                "$anti_abuse_uuid": "32a0c578-b442-4afc-8921-9ce7ccb8a1c8"
+            },
+            "multiLocaleName": {
+                "en_US": "Exit Surveys"
+            },
+            "name": "Exit Surveys",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_company:157344",
+            "name": "San José State University",
+            "logo": {
+                "vectorImage": {
+                    "digitalmediaAsset": "urn:li:digitalmediaAsset:D560BAQH2XPEu-_xgrg",
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.VectorImage"
+                    ],
+                    "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQH2XPEu-_xgrg/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1688401344849/san_jose_state_university_logo?e=1774483200&v=beta&t=JVCetGK-gTkCo_WWcM5ZNRAQVJPXlhRgppFgu5xyGQg",
+                            "expiresAt": 1774483200000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1688401344849/san_jose_state_university_logo?e=1774483200&v=beta&t=BuC5R5r9ROZ-c1TtZfXa0Sw2AsANkoacsglNvpIvkfU",
+                            "expiresAt": 1774483200000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1688401344849/san_jose_state_university_logo?e=1774483200&v=beta&t=1KaoiHyOlQivR-LqFI5nacnQMh11-hq02mLPn6fYZhA",
+                            "expiresAt": 1774483200000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.organization.MiniCompany"
+            ],
+            "url": "https://www.linkedin.com/school/san-jose-state-university/",
+            "$type": "com.linkedin.voyager.dash.organization.Company"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:124": "urn:li:fsd_industry:124"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:124"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/jumpstartmd/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 51,
+                "end": 200,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                ],
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:1181273",
+            "name": "JumpstartMD",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution"
+                    ],
+                    "rootUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQEPBS26h80JEg/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1631351329057?e=1774483200&v=beta&t=34Z2wODdazIDx1YfYISrMgLz7uHCJ9RFz7rGWPl5sLM",
+                            "expiresAt": 1774483200000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1631351329057?e=1774483200&v=beta&t=KYCvSdOBO1SLb0L1n7ce7953aJsySW143WWSorjss1U",
+                            "expiresAt": 1774483200000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1631351329057?e=1774483200&v=beta&t=pOrhD4tmWX4cEJ22aakmvwTohuGGgOLYUIkjgneM58M",
+                            "expiresAt": 1774483200000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "universalName": "jumpstartmd"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:88": "urn:li:fsd_industry:88"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:88"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/aces-autism-comprehensive-educational-services-/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 1001,
+                "end": 5000,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                ],
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:2910789",
+            "name": "ACES (Comprehensive Educational Services)",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution"
+                    ],
+                    "rootUrl": "https://media.licdn.com/dms/image/v2/C560BAQFYKgUh8M4WmA/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1630708791825/aces_autism_comprehensive_educational_services__logo?e=1774483200&v=beta&t=2MFQrukbRGJlM5o1_LQ-OY6Q2IteprBUQ3O547SJb80",
+                            "expiresAt": 1774483200000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1630708791825/aces_autism_comprehensive_educational_services__logo?e=1774483200&v=beta&t=nu-ldm2eAr2DZUOtL620eKY2rIzyU37xurKKWT_1nhI",
+                            "expiresAt": 1774483200000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1630708791825/aces_autism_comprehensive_educational_services__logo?e=1774483200&v=beta&t=7VlIIgFr7F6bb4PzedKIBcmfuyD9soNp6kQs44LUlPo",
+                            "expiresAt": 1774483200000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "universalName": "aces-autism-comprehensive-educational-services-"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:83": "urn:li:fsd_industry:83"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:83"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/resource-label-group-llc/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 1001,
+                "end": 5000,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                ],
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:1420123",
+            "name": "Resource Label Group",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution"
+                    ],
+                    "rootUrl": "https://media.licdn.com/dms/image/v2/C560BAQHsERfGZEEsnA/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1659373101005/resource_label_group_llc_logo?e=1774483200&v=beta&t=PAvdFrU-lLK6rPn7HeZUOZb9c-wKTN2Ax28r6Uf0o_g",
+                            "expiresAt": 1774483200000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1659373101005/resource_label_group_llc_logo?e=1774483200&v=beta&t=noTDwjfOJFG71b0ReaclDM3jK-F6s3Qp6r0zNGT71fE",
+                            "expiresAt": 1774483200000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1659373101005/resource_label_group_llc_logo?e=1774483200&v=beta&t=yv5nQvnI9mQJhIkCSJ8zobi9WLPf6A2UuYwoZMvE87c",
+                            "expiresAt": 1774483200000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "universalName": "resource-label-group-llc"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:86": "urn:li:fsd_industry:86"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:86"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/landcare-lc/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 1001,
+                "end": 5000,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                ],
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:166512",
+            "name": "LandCare LLC",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution"
+                    ],
+                    "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQF5MgcWwNUBtA/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1719255794574/landcare_lc_logo?e=1774483200&v=beta&t=a9ImN1zLzWdAqWTAPyjdU5NDQxj06RLyO5aB9PskAFo",
+                            "expiresAt": 1774483200000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1719255481978/landcare_lc_logo?e=1774483200&v=beta&t=NKcMibnvl1A_mmHExWmlpjqN4wh_AyF-mz9m8cslvg0",
+                            "expiresAt": 1774483200000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1719256356913/landcare_lc_logo?e=1774483200&v=beta&t=ofcAn0YCSXqR5BZpd-iG86jaruHqXDUk2xUXU0Xgllc",
+                            "expiresAt": 1774483200000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "universalName": "landcare-lc"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:122": "urn:li:fsd_industry:122"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:122"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/impec-group/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 201,
+                "end": 500,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                ],
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:2338967",
+            "name": "Impec Group",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution"
+                    ],
+                    "rootUrl": "https://media.licdn.com/dms/image/v2/C560BAQESwRzp2YNBXQ/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1637091438483/impec_group_logo?e=1774483200&v=beta&t=nwNAfkNIgClTEIwXIlt8yyS4IyPZ1Fa5p_C3WRwdlyg",
+                            "expiresAt": 1774483200000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1637091438483/impec_group_logo?e=1774483200&v=beta&t=mxWeLFqUFtEW7cn-pKnTFHmI5Lyd5D-dkKd9ttOuCYw",
+                            "expiresAt": 1774483200000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1637091438483/impec_group_logo?e=1774483200&v=beta&t=wHe73BX35oV9YWvhmAGJCEgy2Ha7SSqn2ntFrnAwizM",
+                            "expiresAt": 1774483200000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "universalName": "impec-group"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:14": "urn:li:fsd_industry:14"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:14"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/california-skin-institute/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 201,
+                "end": 500,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                ],
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:1532867",
+            "name": "Schweiger Dermatology Group-CA",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution"
+                    ],
+                    "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQEKKVztwgFJtA/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/B56Zcx_TIbGQAQ-/0/1748890366741/california_skin_institute_logo?e=1774483200&v=beta&t=FGZF3B9c_E2cnJl7dp4Bc0Vo2_l-G7b42uZar4aBoZE",
+                            "expiresAt": 1774483200000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/B56Zcx_TIbGQAY-/0/1748890366741/california_skin_institute_logo?e=1774483200&v=beta&t=Dhz3gnqU1qnVZLgSujHVniM3BGxReXYGx0L309W89rk",
+                            "expiresAt": 1774483200000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/B56Zcx_TIbGQAI-/0/1748890366741/california_skin_institute_logo?e=1774483200&v=beta&t=UTTRkv4RzTGym1KCx4eiB4qzqwF3CakFcwLt2S7HluE",
+                            "expiresAt": 1774483200000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "universalName": "california-skin-institute"
+        },
+        {
+            "active": true,
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.organization.MiniSchool"
+            ],
+            "url": "https://www.linkedin.com/school/san-jose-state-university/",
+            "$type": "com.linkedin.voyager.dash.organization.School",
+            "entityUrn": "urn:li:fsd_school:17911",
+            "name": "San José State University",
+            "logo": {
+                "vectorImage": {
+                    "digitalmediaAsset": "urn:li:digitalmediaAsset:D560BAQH2XPEu-_xgrg",
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.common.VectorImage"
+                    ],
+                    "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQH2XPEu-_xgrg/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1688401344849/san_jose_state_university_logo?e=1774483200&v=beta&t=JVCetGK-gTkCo_WWcM5ZNRAQVJPXlhRgppFgu5xyGQg",
+                            "expiresAt": 1774483200000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1688401344849/san_jose_state_university_logo?e=1774483200&v=beta&t=BuC5R5r9ROZ-c1TtZfXa0Sw2AsANkoacsglNvpIvkfU",
+                            "expiresAt": 1774483200000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.common.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1688401344849/san_jose_state_university_logo?e=1774483200&v=beta&t=1KaoiHyOlQivR-LqFI5nacnQMh11-hq02mLPn6fYZhA",
+                            "expiresAt": 1774483200000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            }
+        }
+    ]
+}
