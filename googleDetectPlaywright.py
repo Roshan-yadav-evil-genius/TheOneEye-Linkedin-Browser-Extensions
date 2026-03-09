@@ -32,8 +32,8 @@ async def main():
             headless=True,
             args=list(chromium_args_reason.keys()),
         )
-        context = await browser.new_context()
-        
+        context = await browser.new_context(viewport={"width": 1920, "height": 1080})
+        await Stealth.apply_stealth_async(page_or_context=context)
         page = await context.new_page()
         await page.goto("https://accounts.google.com")
         email = "roshanyadavonwork@gmail.com"

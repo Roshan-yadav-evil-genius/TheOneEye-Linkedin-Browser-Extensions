@@ -2,3 +2,5 @@ browser_data/
 venv/
 brain/execution/
 __pycache__/
+models/
+cache/
