@@ -1,7 +1,7 @@
 // Background service worker: queues profile-scoring requests and runs one fetch at a time.
 // Sends QUEUE_STATUS (queued/processing) to tabs for informational loading UI.
 // Keep IS_DEV / API_BASE in sync with config.js (service worker cannot load external scripts).
-const IS_DEV = false;
+const IS_DEV = true;
 const API_BASE = IS_DEV ? 'http://127.0.0.1:7878' : 'http://4.188.82.36:7878';
 const API_URL = API_BASE + '/api/workflow/32499d7b-6861-409d-8337-C8c5eb6008bd/execute/';
 const API_REQUEST_TIMEOUT = 300;
@@ -17,13 +17,16 @@ function sendQueueStatusToTab(tabId, status, position) {
 
 async function processOne(payload, sendResponse, tabId) {
   try {
+    const { apiKey } = await chrome.storage.local.get(['apiKey']);
+    const headers = { 'Content-Type': 'application/json' };
+    if (apiKey) headers['Authorization'] = 'Api-Key ' + apiKey;
     const body = {
       input: { input: { url: payload.url, intent: payload.intent ?? '' } },
       timeout: payload.timeout ?? API_REQUEST_TIMEOUT
     };
     const response = await fetch(API_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify(body)
     });
 

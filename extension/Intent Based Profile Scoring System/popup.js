@@ -51,10 +51,13 @@ async function sendReport(pageUrl, description) {
     },
     timeout: 300
   };
+  const { apiKey } = await chrome.storage.local.get(['apiKey']);
+  const headers = { 'Content-Type': 'application/json' };
+  if (apiKey) headers['Authorization'] = 'Api-Key ' + apiKey;
   try {
     const res = await fetch(REPORT_API_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify(body)
     });
     const data = await res.json();
@@ -68,6 +71,64 @@ async function sendReport(pageUrl, description) {
   } finally {
     if (reportSubmitBtn) reportSubmitBtn.disabled = false;
   }
+}
+
+// API Key UI: load/save/logout + welcome
+const AUTH_ME_URL = (typeof API_BASE !== 'undefined' ? API_BASE : 'http://127.0.0.1:7878') + '/api/auth/me/';
+
+async function refreshApiKeyUI() {
+  const apiKeyAuthRow = document.getElementById('apiKeyAuthRow');
+  const apiKeyFormRow = document.getElementById('apiKeyFormRow');
+  const apiKeyWelcomeEl = document.getElementById('apiKeyWelcome');
+  const apiKeyInput = document.getElementById('apiKeyInput');
+  if (!apiKeyAuthRow || !apiKeyFormRow) return;
+  const { apiKey, userName } = await chrome.storage.local.get(['apiKey', 'userName']);
+  if (apiKey) {
+    apiKeyAuthRow.style.display = 'flex';
+    apiKeyFormRow.style.display = 'none';
+    if (apiKeyWelcomeEl) apiKeyWelcomeEl.textContent = userName ? 'Welcome, ' + userName : 'Welcome';
+    if (apiKeyInput) { apiKeyInput.value = ''; apiKeyInput.placeholder = 'Enter API key'; }
+  } else {
+    apiKeyAuthRow.style.display = 'none';
+    apiKeyFormRow.style.display = 'block';
+    if (apiKeyInput) { apiKeyInput.value = ''; apiKeyInput.placeholder = 'Enter API key'; apiKeyInput.readOnly = false; }
+  }
+}
+
+async function onApiKeySave() {
+  const apiKeyInput = document.getElementById('apiKeyInput');
+  const key = (apiKeyInput && apiKeyInput.value) ? apiKeyInput.value.trim() : '';
+  if (!key) {
+    setReportStatus('Enter an API key', true);
+    return;
+  }
+  try {
+    const res = await fetch(AUTH_ME_URL, { method: 'GET', headers: { 'Authorization': 'Api-Key ' + key } });
+    if (!res.ok) {
+      setReportStatus('Invalid API key', true);
+      return;
+    }
+    const data = await res.json();
+    const first = (data.first_name || '').trim();
+    const last = (data.last_name || '').trim();
+    const displayName = (first + ' ' + last).trim() || (data.username || '').trim() || 'User';
+    await chrome.storage.local.set({ apiKey: key, userName: displayName });
+    setReportStatus('', false);
+    refreshApiKeyUI();
+  } catch {
+    setReportStatus('Invalid API key', true);
+  }
+}
+
+function onApiKeyLogout() {
+  chrome.storage.local.remove(['apiKey', 'userName'], () => {
+    const apiKeyAuthRow = document.getElementById('apiKeyAuthRow');
+    const apiKeyFormRow = document.getElementById('apiKeyFormRow');
+    const apiKeyInput = document.getElementById('apiKeyInput');
+    if (apiKeyAuthRow) apiKeyAuthRow.style.display = 'none';
+    if (apiKeyFormRow) apiKeyFormRow.style.display = 'block';
+    if (apiKeyInput) { apiKeyInput.value = ''; apiKeyInput.placeholder = 'Enter API key'; apiKeyInput.readOnly = false; }
+  });
 }
 
 // Load current autoscore state, show-sidebar state, and intent
@@ -236,7 +297,13 @@ if (reportBtn) reportBtn.addEventListener('click', toggleReportSection);
 if (reportCloseBtn) reportCloseBtn.addEventListener('click', closeReportSection);
 if (reportSubmitBtn) reportSubmitBtn.addEventListener('click', onReportSubmit);
 
+const apiKeySaveBtn = document.getElementById('apiKeySaveBtn');
+const apiKeyLogoutBtn = document.getElementById('apiKeyLogoutBtn');
+if (apiKeySaveBtn) apiKeySaveBtn.addEventListener('click', onApiKeySave);
+if (apiKeyLogoutBtn) apiKeyLogoutBtn.addEventListener('click', onApiKeyLogout);
+
 // Load state when popup opens
+refreshApiKeyUI();
 loadAutoscoreState();
 loadThresholds();
 setupThresholdSliders();

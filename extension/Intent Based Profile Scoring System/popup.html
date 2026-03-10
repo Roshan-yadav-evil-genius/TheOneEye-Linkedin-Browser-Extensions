@@ -135,6 +135,37 @@
     .report-actions .btn-export:hover {
       background: rgba(255, 255, 255, 0.1);
     }
+    .api-key-input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 10px;
+      margin-bottom: 0;
+      background: rgba(10, 17, 40, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 13px;
+      font-family: inherit;
+    }
+    .api-key-input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .api-key-input:focus {
+      outline: none;
+      border-color: #0C6DFD;
+    }
+    .api-key-auth-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .api-key-welcome {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 500;
+      color: #0C6DFD;
+    }
     .report-status {
       margin-top: 8px;
       font-size: 13px;
@@ -449,6 +480,19 @@
     <div class="header-middle">IntentProfileScoringSystem</div>
     <div class="header-right">
       <button type="button" id="reportBtn" class="btn-report">Report</button>
+    </div>
+  </div>
+  <div id="apiKeyBlock" class="report-section">
+    <div id="apiKeyAuthRow" class="api-key-auth-row" style="display: none;">
+      <span id="apiKeyWelcome" class="api-key-welcome"></span>
+      <button type="button" id="apiKeyLogoutBtn" class="btn-report">Logout</button>
+    </div>
+    <div id="apiKeyFormRow">
+      <label class="report-label" id="apiKeyLabel" for="apiKeyInput">API Key</label>
+      <input type="password" id="apiKeyInput" placeholder="Enter API key" class="api-key-input">
+      <div class="report-actions" style="margin-top: 8px;">
+        <button type="button" id="apiKeySaveBtn" class="btn-export">Save</button>
+      </div>
     </div>
   </div>
   <div id="reportSection" class="report-section" style="display: none;">

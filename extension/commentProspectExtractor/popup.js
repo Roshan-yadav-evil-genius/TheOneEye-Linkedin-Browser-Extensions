@@ -16,6 +16,9 @@
   const reportDescription = document.getElementById('reportDescription');
   const reportCloseBtn = document.getElementById('reportCloseBtn');
   const reportSubmitBtn = document.getElementById('reportSubmitBtn');
+  const apiKeyInput = document.getElementById('apiKeyInput');
+  const apiKeySaveBtn = document.getElementById('apiKeySaveBtn');
+  const apiKeyLogoutBtn = document.getElementById('apiKeyLogoutBtn');
 
   let state = {
     activityId: null,
@@ -447,6 +450,66 @@
     if (reportSection) reportSection.style.display = 'none';
   }
 
+  var apiKeyWelcomeEl = document.getElementById('apiKeyWelcome');
+  var apiKeyAuthRow = document.getElementById('apiKeyAuthRow');
+  var apiKeyFormRow = document.getElementById('apiKeyFormRow');
+
+  function refreshApiKeyUI() {
+    chrome.storage.local.get(['apiKey', 'userName'], function (r) {
+      var key = r && r.apiKey;
+      var userName = r && r.userName;
+      if (!apiKeyAuthRow || !apiKeyFormRow) return;
+      if (key) {
+        apiKeyAuthRow.style.display = 'flex';
+        apiKeyFormRow.style.display = 'none';
+        if (apiKeyWelcomeEl) apiKeyWelcomeEl.textContent = userName ? 'Welcome, ' + userName : 'Welcome';
+        if (apiKeyInput) { apiKeyInput.value = ''; apiKeyInput.placeholder = 'Enter API key'; }
+      } else {
+        apiKeyAuthRow.style.display = 'none';
+        apiKeyFormRow.style.display = 'block';
+        if (apiKeyInput) { apiKeyInput.value = ''; apiKeyInput.placeholder = 'Enter API key'; apiKeyInput.readOnly = false; }
+      }
+    });
+  }
+
+  function onApiKeySave() {
+    var key = (apiKeyInput && apiKeyInput.value) ? apiKeyInput.value.trim() : '';
+    if (!key) {
+      setStatus('Enter an API key', true);
+      return;
+    }
+    var authUrl = (typeof API_BASE !== 'undefined' ? API_BASE : 'http://127.0.0.1:7878') + '/api/auth/me/';
+    fetch(authUrl, { method: 'GET', headers: { 'Authorization': 'Api-Key ' + key } })
+      .then(function (res) {
+        if (!res.ok) {
+          setStatus('Invalid API key', true);
+          return;
+        }
+        return res.json();
+      })
+      .then(function (data) {
+        if (!data) return;
+        var first = (data.first_name || '').trim();
+        var last = (data.last_name || '').trim();
+        var displayName = (first + ' ' + last).trim() || (data.username || '').trim() || 'User';
+        chrome.storage.local.set({ apiKey: key, userName: displayName }, function () {
+          setStatus('', false);
+          refreshApiKeyUI();
+        });
+      })
+      .catch(function () {
+        setStatus('Invalid API key', true);
+      });
+  }
+
+  function onApiKeyLogout() {
+    chrome.storage.local.remove(['apiKey', 'userName'], function () {
+      if (apiKeyAuthRow) apiKeyAuthRow.style.display = 'none';
+      if (apiKeyFormRow) apiKeyFormRow.style.display = 'block';
+      if (apiKeyInput) { apiKeyInput.value = ''; apiKeyInput.placeholder = 'Enter API key'; apiKeyInput.readOnly = false; }
+    });
+  }
+
   function onReportSubmit() {
     var postUrl = state.postUrl || '';
     var description = reportDescription ? reportDescription.value.trim() : '';
@@ -474,11 +537,14 @@
       },
       timeout: 300
     };
-    fetch(REPORT_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body)
-    })
+    chrome.storage.local.get(['apiKey'], function (r) {
+      var headers = { 'Content-Type': 'application/json' };
+      if (r && r.apiKey) headers['Authorization'] = 'Api-Key ' + r.apiKey;
+      fetch(REPORT_ENDPOINT, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(body)
+      })
       .then(function (res) {
         return res.json().then(function (data) {
           if (!res.ok) throw new Error(data.error || 'Report failed');
@@ -499,6 +565,7 @@
       .finally(function () {
         if (reportSubmitBtn) reportSubmitBtn.disabled = false;
       });
+    });
   }
 
   loadBtn.addEventListener('click', onLoad);
@@ -507,7 +574,10 @@
   if (reportBtn) reportBtn.addEventListener('click', toggleReportSection);
   if (reportCloseBtn) reportCloseBtn.addEventListener('click', closeReportSection);
   if (reportSubmitBtn) reportSubmitBtn.addEventListener('click', onReportSubmit);
+  if (apiKeySaveBtn) apiKeySaveBtn.addEventListener('click', onApiKeySave);
+  if (apiKeyLogoutBtn) apiKeyLogoutBtn.addEventListener('click', onApiKeyLogout);
 
+  refreshApiKeyUI();
   refreshContextDisplay();
   updateListVisibility();
   updateExportButtonLabel();

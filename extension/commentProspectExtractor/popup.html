@@ -16,6 +16,19 @@
       </div>
     </header>
     <div class="header-separator"></div>
+    <div id="apiKeyBlock" class="report-section">
+      <div id="apiKeyAuthRow" class="api-key-auth-row" style="display: none;">
+        <span id="apiKeyWelcome" class="api-key-welcome"></span>
+        <button type="button" id="apiKeyLogoutBtn" class="btn-report">Logout</button>
+      </div>
+      <div id="apiKeyFormRow">
+        <label class="report-label" id="apiKeyLabel">API Key</label>
+        <input type="password" id="apiKeyInput" placeholder="Enter API key" class="api-key-input">
+        <div class="report-actions" style="margin-top: 8px;">
+          <button type="button" id="apiKeySaveBtn" class="btn-export">Save</button>
+        </div>
+      </div>
+    </div>
     <div id="reportSection" class="report-section" style="display: none;">
       <label class="report-label">Describe the issue</label>
       <textarea id="reportDescription" placeholder="Describe the issue..." rows="3"></textarea>

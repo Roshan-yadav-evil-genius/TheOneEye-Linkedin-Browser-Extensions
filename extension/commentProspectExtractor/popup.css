@@ -122,6 +122,41 @@ html, body {
   border-color: #3B82F6;
 }
 
+.api-key-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin-bottom: 0;
+  background: #2D3548;
+  border: 1px solid #444B5B;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.api-key-input::placeholder {
+  color: #A0A8B4;
+}
+
+.api-key-input:focus {
+  outline: none;
+  border-color: #3B82F6;
+}
+
+.api-key-auth-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.api-key-welcome {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3B82F6;
+}
+
 .report-actions {
   display: flex;
   gap: 8px;

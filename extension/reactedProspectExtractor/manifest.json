@@ -3,7 +3,7 @@
   "name": "LinkedIn Post Reactors Prospect Extractor",
   "version": "1.0.0",
   "description": "Load who reacted to a LinkedIn post (10 at a time) from the popup.",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": ["https://www.linkedin.com/*", "https://linkedin.com/*", "http://127.0.0.1:7878/*","http://4.188.82.36:7878/*"],
   "icons": {
     "16": "icon.png",
